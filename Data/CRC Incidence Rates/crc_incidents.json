@@ -2962,6 +2962,1486 @@
   {
     "ISO code": "AFG",
     "Population": "Afghanistan",
+    "Value": "25.38",
+    "Rank": "6",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "ALB",
+    "Population": "Albania",
+    "Value": "36.3",
+    "Rank": "5",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "DZA",
+    "Population": "Algeria",
+    "Value": "70.15",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "AGO",
+    "Population": "Angola",
+    "Value": "42.31",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "AZE",
+    "Population": "Azerbaijan",
+    "Value": "77.98",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "ARG",
+    "Population": "Argentina",
+    "Value": "139.51",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "AUS",
+    "Population": "Australia",
+    "Value": "159.14",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "AUT",
+    "Population": "Austria",
+    "Value": "121.22",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "BHS",
+    "Population": "Bahamas",
+    "Value": "89.19",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "BHR",
+    "Population": "Bahrain",
+    "Value": "64.66",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "BGD",
+    "Population": "Bangladesh",
+    "Value": "14.99",
+    "Rank": "9",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "ARM",
+    "Population": "Armenia",
+    "Value": "108.16",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "BRB",
+    "Population": "Barbados",
+    "Value": "130.42",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "BEL",
+    "Population": "Belgium",
+    "Value": "200.4",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "BTN",
+    "Population": "Bhutan",
+    "Value": "17.14",
+    "Rank": "6",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "BOL",
+    "Population": "Bolivia, Plurinational State of",
+    "Value": "26.9",
+    "Rank": "5",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "BIH",
+    "Population": "Bosnia and Herzegovina",
+    "Value": "154.36",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "BWA",
+    "Population": "Botswana",
+    "Value": "15.83",
+    "Rank": "6",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "BRA",
+    "Population": "Brazil",
+    "Value": "95.27",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "BLZ",
+    "Population": "Belize",
+    "Value": "29.6",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "SLB",
+    "Population": "Solomon Islands",
+    "Value": "28.8",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "BRN",
+    "Population": "Brunei Darussalam",
+    "Value": "179.34",
+    "Rank": "1",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "BGR",
+    "Population": "Bulgaria",
+    "Value": "172.97",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "MMR",
+    "Population": "Myanmar",
+    "Value": "49.4",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "BDI",
+    "Population": "Burundi",
+    "Value": "30.84",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "BLR",
+    "Population": "Belarus",
+    "Value": "183.36",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "KHM",
+    "Population": "Cambodia",
+    "Value": "58.26",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "CMR",
+    "Population": "Cameroon",
+    "Value": "33.44",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "CAN",
+    "Population": "Canada",
+    "Value": "156.75",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "CPV",
+    "Population": "Cabo Verde",
+    "Value": "61.61",
+    "Rank": "5",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "CAF",
+    "Population": "Central African Republic",
+    "Value": "29.95",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "LKA",
+    "Population": "Sri Lanka",
+    "Value": "31.36",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "TCD",
+    "Population": "Chad",
+    "Value": "31.88",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "CHL",
+    "Population": "Chile",
+    "Value": "101.62",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "CHN",
+    "Population": "China",
+    "Value": "127.92",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "COL",
+    "Population": "Colombia",
+    "Value": "75.1",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "COM",
+    "Population": "Comoros",
+    "Value": "18.65",
+    "Rank": "5",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "COG",
+    "Population": "Congo, Republic of",
+    "Value": "31.97",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "COD",
+    "Population": "Congo, Democratic Republic of",
+    "Value": "30.89",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "CRI",
+    "Population": "Costa Rica",
+    "Value": "78.98",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "HRV",
+    "Population": "Croatia",
+    "Value": "239.53",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "CUB",
+    "Population": "Cuba",
+    "Value": "82.83",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "CYP",
+    "Population": "Cyprus",
+    "Value": "163.93",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "CZE",
+    "Population": "Czechia",
+    "Value": "210.74",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "BEN",
+    "Population": "Benin",
+    "Value": "47.34",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "DNK",
+    "Population": "Denmark",
+    "Value": "223.07",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "DOM",
+    "Population": "Dominican Republic",
+    "Value": "55.96",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "ECU",
+    "Population": "Ecuador",
+    "Value": "54.72",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "SLV",
+    "Population": "El Salvador",
+    "Value": "36.89",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "GNQ",
+    "Population": "Equatorial Guinea",
+    "Value": "31.6",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "ETH",
+    "Population": "Ethiopia",
+    "Value": "37.97",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "ERI",
+    "Population": "Eritrea",
+    "Value": "30.47",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "EST",
+    "Population": "Estonia",
+    "Value": "169.57",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "FJI",
+    "Population": "Fiji",
+    "Value": "50.35",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "FIN",
+    "Population": "Finland",
+    "Value": "134.17",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "FRA",
+    "Population": "France",
+    "Value": "165.13",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "GUF",
+    "Population": "French Guiana",
+    "Value": "89.49",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "PYF",
+    "Population": "French Polynesia",
+    "Value": "65.23",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "DJI",
+    "Population": "Djibouti",
+    "Value": "29.23",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "GAB",
+    "Population": "Gabon",
+    "Value": "30.5",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "GEO",
+    "Population": "Georgia",
+    "Value": "88.54",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "GMB",
+    "Population": "The Republic of the Gambia",
+    "Value": "16.2",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "PSE",
+    "Population": "Gaza Strip and West Bank",
+    "Value": "89.1",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "DEU",
+    "Population": "Germany",
+    "Value": "135.39",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "GHA",
+    "Population": "Ghana",
+    "Value": "16.71",
+    "Rank": "5",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "GRC",
+    "Population": "Greece",
+    "Value": "161.05",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "GLP",
+    "Population": "France, Guadeloupe",
+    "Value": "118.89",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "GUA",
+    "Population": "Guam",
+    "Value": "89.55",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "GTM",
+    "Population": "Guatemala",
+    "Value": "23.41",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "GIN",
+    "Population": "Guinea",
+    "Value": "17.53",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "GUY",
+    "Population": "Guyana",
+    "Value": "41.82",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "HTI",
+    "Population": "Haiti",
+    "Value": "51.81",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "HND",
+    "Population": "Honduras",
+    "Value": "37.76",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "HUN",
+    "Population": "Hungary",
+    "Value": "287.18",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "ISL",
+    "Population": "Iceland",
+    "Value": "150.33",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "IND",
+    "Population": "India",
+    "Value": "24.81",
+    "Rank": "6",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "IDN",
+    "Population": "Indonesia",
+    "Value": "70.07",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "IRN",
+    "Population": "Iran, Islamic Republic of",
+    "Value": "68.23",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "IRQ",
+    "Population": "Iraq",
+    "Value": "44.27",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "IRL",
+    "Population": "Ireland",
+    "Value": "197.3",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "ISR",
+    "Population": "Israel",
+    "Value": "114.92",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "ITA",
+    "Population": "Italy",
+    "Value": "157.91",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "CIV",
+    "Population": "Côte d'Ivoire",
+    "Value": "35.22",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "JAM",
+    "Population": "Jamaica",
+    "Value": "120.11",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "JPN",
+    "Population": "Japan",
+    "Value": "215.15",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "KAZ",
+    "Population": "Kazakhstan",
+    "Value": "83.34",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "JOR",
+    "Population": "Jordan",
+    "Value": "71.54",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "KEN",
+    "Population": "Kenya",
+    "Value": "53.39",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "PRK",
+    "Population": "Korea, Democratic Republic of",
+    "Value": "102.9",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "KOR",
+    "Population": "Korea, Republic of",
+    "Value": "153.1",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "KWT",
+    "Population": "Kuwait",
+    "Value": "61.64",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "KGZ",
+    "Population": "Kyrgyzstan",
+    "Value": "38.05",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "LAO",
+    "Population": "Lao People's Democratic Republic",
+    "Value": "66.63",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "LBN",
+    "Population": "Lebanon",
+    "Value": "66.17",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "LSO",
+    "Population": "Lesotho",
+    "Value": "34.34",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "LVA",
+    "Population": "Latvia",
+    "Value": "230.75",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "LBR",
+    "Population": "Liberia",
+    "Value": "24.86",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "LBY",
+    "Population": "Libya",
+    "Value": "74.15",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "LTU",
+    "Population": "Lithuania",
+    "Value": "171.13",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "LUX",
+    "Population": "Luxembourg",
+    "Value": "141.13",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "MDG",
+    "Population": "Madagascar",
+    "Value": "23.71",
+    "Rank": "7",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "MWI",
+    "Population": "Malawi",
+    "Value": "24.13",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "MYS",
+    "Population": "Malaysia",
+    "Value": "93.39",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "MDV",
+    "Population": "Maldives",
+    "Value": "70.64",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "MLI",
+    "Population": "Mali",
+    "Value": "31.8",
+    "Rank": "5",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "MLT",
+    "Population": "Malta",
+    "Value": "151.13",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "MTQ",
+    "Population": "France, Martinique",
+    "Value": "120.23",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "MRT",
+    "Population": "Mauritania",
+    "Value": "35.32",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "MUS",
+    "Population": "Mauritius",
+    "Value": "99.9",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "MEX",
+    "Population": "Mexico",
+    "Value": "50.91",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "MNG",
+    "Population": "Mongolia",
+    "Value": "28.99",
+    "Rank": "5",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "MDA",
+    "Population": "Republic of Moldova",
+    "Value": "208.12",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "MNE",
+    "Population": "Montenegro",
+    "Value": "168.41",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "MAR",
+    "Population": "Morocco",
+    "Value": "55.33",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "MOZ",
+    "Population": "Mozambique",
+    "Value": "13.84",
+    "Rank": "6",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "OMN",
+    "Population": "Oman",
+    "Value": "39.9",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "NAM",
+    "Population": "Namibia",
+    "Value": "43.62",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "NPL",
+    "Population": "Nepal",
+    "Value": "18.72",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "NLD",
+    "Population": "The Netherlands",
+    "Value": "223.84",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "NCL",
+    "Population": "France, New Caledonia",
+    "Value": "126.76",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "VUT",
+    "Population": "Vanuatu",
+    "Value": "16.39",
+    "Rank": "5",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "NZL",
+    "Population": "New Zealand",
+    "Value": "171.93",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "NIC",
+    "Population": "Nicaragua",
+    "Value": "44.39",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "NER",
+    "Population": "Niger",
+    "Value": "30.92",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "NGA",
+    "Population": "Nigeria",
+    "Value": "35.82",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "NOR",
+    "Population": "Norway",
+    "Value": "208.1",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "PAK",
+    "Population": "Pakistan",
+    "Value": "23.21",
+    "Rank": "5",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "PAN",
+    "Population": "Panama",
+    "Value": "70.09",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "PNG",
+    "Population": "Papua New Guinea",
+    "Value": "68.03",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "PRY",
+    "Population": "Paraguay",
+    "Value": "86.07",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "PER",
+    "Population": "Peru",
+    "Value": "51.45",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "PHL",
+    "Population": "Philippines",
+    "Value": "106.3",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "POL",
+    "Population": "Poland",
+    "Value": "194.78",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "PRT",
+    "Population": "Portugal",
+    "Value": "253.02",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "GNB",
+    "Population": "Guinea-Bissau",
+    "Value": "25.07",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "TLS",
+    "Population": "Timor-Leste",
+    "Value": "42.93",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "PRI",
+    "Population": "Puerto Rico",
+    "Value": "142.8",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "QAT",
+    "Population": "Qatar",
+    "Value": "64.71",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "REU",
+    "Population": "France, La Réunion",
+    "Value": "130.88",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "ROU",
+    "Population": "Romania",
+    "Value": "194.23",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "RUS",
+    "Population": "Russian Federation",
+    "Value": "159.39",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "RWA",
+    "Population": "Rwanda",
+    "Value": "25.05",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "LCA",
+    "Population": "Saint Lucia",
+    "Value": "70.93",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "STP",
+    "Population": "Sao Tome and Principe",
+    "Value": "61.68",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "SAU",
+    "Population": "Saudi Arabia",
+    "Value": "66.73",
+    "Rank": "1",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "SEN",
+    "Population": "Senegal",
+    "Value": "30.07",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "SRB",
+    "Population": "Serbia",
+    "Value": "210.79",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "SLE",
+    "Population": "Sierra Leone",
+    "Value": "23.08",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "SGP",
+    "Population": "Singapore",
+    "Value": "174.02",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "SVK",
+    "Population": "Slovakia",
+    "Value": "283.94",
+    "Rank": "1",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "VNM",
+    "Population": "Viet Nam",
+    "Value": "75.04",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "SVN",
+    "Population": "Slovenia",
+    "Value": "261.54",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "SOM",
+    "Population": "Somalia",
+    "Value": "41.44",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "ZAF",
+    "Population": "South Africa",
+    "Value": "77.7",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "ZWE",
+    "Population": "Zimbabwe",
+    "Value": "46.39",
+    "Rank": "5",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "ESP",
+    "Population": "Spain",
+    "Value": "221.68",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "SSD",
+    "Population": "South Sudan",
+    "Value": "26.55",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "SDN",
+    "Population": "Sudan",
+    "Value": "24.26",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "SUR",
+    "Population": "Suriname",
+    "Value": "101.79",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "SWZ",
+    "Population": "Eswatini",
+    "Value": "17.97",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "SWE",
+    "Population": "Sweden",
+    "Value": "139.52",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "CHE",
+    "Population": "Switzerland",
+    "Value": "115.34",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "SYR",
+    "Population": "Syrian Arab Republic",
+    "Value": "60.77",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "TJK",
+    "Population": "Tajikistan",
+    "Value": "25.2",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "THA",
+    "Population": "Thailand",
+    "Value": "84.06",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "TGO",
+    "Population": "Togo",
+    "Value": "50.63",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "TTO",
+    "Population": "Trinidad and Tobago",
+    "Value": "101.86",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "ARE",
+    "Population": "United Arab Emirates",
+    "Value": "54.46",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "TUN",
+    "Population": "Tunisia",
+    "Value": "58.2",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "TUR",
+    "Population": "Turkey",
+    "Value": "115.34",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "TKM",
+    "Population": "Turkmenistan",
+    "Value": "28.14",
+    "Rank": "6",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "UGA",
+    "Population": "Uganda",
+    "Value": "33.07",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "UKR",
+    "Population": "Ukraine",
+    "Value": "155.24",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "MKD",
+    "Population": "North Macedonia",
+    "Value": "121.84",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "EGY",
+    "Population": "Egypt",
+    "Value": "20.15",
+    "Rank": "6",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "GBR",
+    "Population": "United Kingdom",
+    "Value": "181.28",
+    "Rank": "2",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "TZA",
+    "Population": "Tanzania, United Republic of",
+    "Value": "33.28",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "USA",
+    "Population": "United States of America",
+    "Value": "118.58",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "BFA",
+    "Population": "Burkina Faso",
+    "Value": "11.8",
+    "Rank": "6",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "URY",
+    "Population": "Uruguay",
+    "Value": "186.33",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "UZB",
+    "Population": "Uzbekistan",
+    "Value": "39.66",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "VEN",
+    "Population": "Venezuela, Bolivarian Republic of",
+    "Value": "67.54",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "WSM",
+    "Population": "Samoa",
+    "Value": "154.68",
+    "Rank": "3",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "YEM",
+    "Population": "Yemen",
+    "Value": "53.45",
+    "Rank": "1",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "ZMB",
+    "Population": "Zambia",
+    "Value": "26.46",
+    "Rank": "4",
+    "Gender": "Male",
+    "Age Group": "50-85+"
+  },
+  {
+    "ISO code": "AFG",
+    "Population": "Afghanistan",
     "Value": "20.95",
     "Rank": "5",
     "Gender": "Female",
