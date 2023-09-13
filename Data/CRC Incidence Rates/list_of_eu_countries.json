@@ -1,0 +1,237 @@
+[
+    {
+        "id": "001",
+        "iso2": "AL",
+        "label": "Albania"
+    },
+    {
+        "id": "002",
+        "iso2": "AD",
+        "label": "Andorra"
+    },
+    {
+        "id": "003",
+        "iso2": "AT",
+        "label": "Austria"
+    },
+    {
+        "id": "004",
+        "iso2": "BY",
+        "label": "Belarus"
+    },
+    {
+        "id": "005",
+        "iso2": "BE",
+        "label": "Belgium"
+    },
+    {
+        "id": "006",
+        "iso2": "BA",
+        "label": "Bosnia and Herzegovina"
+    },
+    {
+        "id": "007",
+        "iso2": "BG",
+        "label": "Bulgaria"
+    },
+    {
+        "id": "008",
+        "iso2": "HY",
+        "label": "Croatia"
+    },
+    {
+        "id": "044",
+        "iso2": "CY",
+        "label": "Cyprus"
+    },
+    {
+        "id": "009",
+        "iso2": "CZ",
+        "label": "Czech Republic"
+    },
+    {
+        "id": "010",
+        "iso2": "DK",
+        "label": "Denmark"
+    },
+    {
+        "id": "011",
+        "iso2": "EE",
+        "label": "Estonia"
+    },
+    {
+        "id": "012",
+        "iso2": "FI",
+        "label": "Finland"
+    },
+    {
+        "id": "013",
+        "iso2": "FR",
+        "label": "France"
+    },
+    {
+        "id": "014",
+        "iso2": "DE",
+        "label": "Germany"
+    },
+    {
+        "id": "015",
+        "iso2": "GR",
+        "label": "Greece"
+    },
+    {
+        "id": "016",
+        "iso2": "HU",
+        "label": "Hungary"
+    },
+    {
+        "id": "017",
+        "iso2": "IS",
+        "label": "Iceland"
+    },
+    {
+        "id": "018",
+        "iso2": "IE",
+        "label": "Ireland"
+    },
+    {
+        "id": "019",
+        "iso2": "IT",
+        "label": "Italy"
+    },
+    {
+        "id": "047",
+        "iso2": "KO",
+        "label": "Kosovo"
+    },
+    {
+        "id": "020",
+        "iso2": "LV",
+        "label": "Latvia"
+    },
+    {
+        "id": "021",
+        "iso2": "LI",
+        "label": "Liechtenstein"
+    },
+    {
+        "id": "022",
+        "iso2": "LT",
+        "label": "Lithuania"
+    },
+    {
+        "id": "023",
+        "iso2": "LU",
+        "label": "Luxembourg"
+    },
+    {
+        "id": "024",
+        "iso2": "MK",
+        "label": "Macedonia"
+    },
+    {
+        "id": "025",
+        "iso2": "MT",
+        "label": "Malta"
+    },
+    {
+        "id": "026",
+        "iso2": "MD",
+        "label": "Moldova"
+    },
+    {
+        "id": "027",
+        "iso2": "MC",
+        "label": "Monaco"
+    },
+    {
+        "id": "028",
+        "iso2": "MO",
+        "label": "Montenegro"
+    },
+    {
+        "id": "029",
+        "iso2": "NL",
+        "label": "Netherlands"
+    },
+    {
+        "id": "030",
+        "iso2": "NO",
+        "label": "Norway"
+    },
+    {
+        "id": "031",
+        "iso2": "PL",
+        "label": "Poland"
+    },
+    {
+        "id": "032",
+        "iso2": "PT",
+        "label": "Portugal"
+    },
+    {
+        "id": "033",
+        "iso2": "RO",
+        "label": "Romania"
+    },
+    {
+        "id": "046",
+        "iso2": "RU",
+        "label": "Russia"
+    },
+    {
+        "id": "034",
+        "iso2": "SM",
+        "label": "San Marino"
+    },
+    {
+        "id": "035",
+        "iso2": "CS",
+        "label": "Serbia"
+    },
+    {
+        "id": "036",
+        "iso2": "SK",
+        "label": "Slovakia"
+    },
+    {
+        "id": "037",
+        "iso2": "SL",
+        "label": "Slovenia"
+    },
+    {
+        "id": "038",
+        "iso2": "ES",
+        "label": "Spain"
+    },
+    {
+        "id": "039",
+        "iso2": "SE",
+        "label": "Sweden"
+    },
+    {
+        "id": "040",
+        "iso2": "CH",
+        "label": "Switzerland"
+    },
+    {
+        "id": "045",
+        "iso2": "TK",
+        "label": "Turkey"
+    },
+    {
+        "id": "041",
+        "iso2": "UA",
+        "label": "Ukraine"
+    },
+    {
+        "id": "042",
+        "iso2": "UK",
+        "label": "United Kingdom"
+    },
+    {
+        "id": "043",
+        "iso2": "VA",
+        "label": "Vatican City"
+    }
+]
