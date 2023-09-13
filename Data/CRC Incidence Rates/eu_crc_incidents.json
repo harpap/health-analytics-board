@@ -1,0 +1,1298 @@
+[
+  {
+    "ISO code": "ALB",
+    "Value": "10.18",
+    "Age Group": "40-49",
+    "Rank": "4",
+    "Gender": "Male",
+    "id": "001",
+    "label": "Albania"
+  },
+  {
+    "ISO code": "AUT",
+    "Value": "14.89",
+    "Age Group": "40-49",
+    "Rank": "3",
+    "Gender": "Male",
+    "id": "003",
+    "label": "Austria"
+  },
+  {
+    "ISO code": "BEL",
+    "Value": "21.31",
+    "Age Group": "40-49",
+    "Rank": "2",
+    "Gender": "Male",
+    "id": "005",
+    "label": "Belgium"
+  },
+  {
+    "ISO code": "BIH",
+    "Value": "25.02",
+    "Age Group": "40-49",
+    "Rank": "2",
+    "Gender": "Male",
+    "id": "006",
+    "label": "Bosnia and Herzegovina"
+  },
+  {
+    "ISO code": "BGR",
+    "Value": "12.52",
+    "Age Group": "40-49",
+    "Rank": "3",
+    "Gender": "Male",
+    "id": "007",
+    "label": "Bulgaria"
+  },
+  {
+    "ISO code": "BLR",
+    "Value": "18.89",
+    "Age Group": "40-49",
+    "Rank": "3",
+    "Gender": "Male",
+    "id": "004",
+    "label": "Belarus"
+  },
+  {
+    "ISO code": "HRV",
+    "Value": "19.95",
+    "Age Group": "40-49",
+    "Rank": "2",
+    "Gender": "Male",
+    "id": "008",
+    "label": "Croatia"
+  },
+  {
+    "ISO code": "CYP",
+    "Value": "20.01",
+    "Age Group": "40-49",
+    "Rank": "1",
+    "Gender": "Male",
+    "id": "044",
+    "label": "Cyprus"
+  },
+  {
+    "ISO code": "DNK",
+    "Value": "18.31",
+    "Age Group": "40-49",
+    "Rank": "3",
+    "Gender": "Male",
+    "id": "010",
+    "label": "Denmark"
+  },
+  {
+    "ISO code": "EST",
+    "Value": "11.44",
+    "Age Group": "40-49",
+    "Rank": "6",
+    "Gender": "Male",
+    "id": "011",
+    "label": "Estonia"
+  },
+  {
+    "ISO code": "FIN",
+    "Value": "15.64",
+    "Age Group": "40-49",
+    "Rank": "2",
+    "Gender": "Male",
+    "id": "012",
+    "label": "Finland"
+  },
+  {
+    "ISO code": "FRA",
+    "Value": "22.63",
+    "Age Group": "40-49",
+    "Rank": "3",
+    "Gender": "Male",
+    "id": "013",
+    "label": "France"
+  },
+  {
+    "ISO code": "DEU",
+    "Value": "19.14",
+    "Age Group": "40-49",
+    "Rank": "4",
+    "Gender": "Male",
+    "id": "014",
+    "label": "Germany"
+  },
+  {
+    "ISO code": "GRC",
+    "Value": "15.11",
+    "Age Group": "40-49",
+    "Rank": "1",
+    "Gender": "Male",
+    "id": "015",
+    "label": "Greece"
+  },
+  {
+    "ISO code": "HUN",
+    "Value": "31.76",
+    "Age Group": "40-49",
+    "Rank": "1",
+    "Gender": "Male",
+    "id": "016",
+    "label": "Hungary"
+  },
+  {
+    "ISO code": "ISL",
+    "Value": "23.1",
+    "Age Group": "40-49",
+    "Rank": "1",
+    "Gender": "Male",
+    "id": "017",
+    "label": "Iceland"
+  },
+  {
+    "ISO code": "IRL",
+    "Value": "20.55",
+    "Age Group": "40-49",
+    "Rank": "2",
+    "Gender": "Male",
+    "id": "018",
+    "label": "Ireland"
+  },
+  {
+    "ISO code": "ITA",
+    "Value": "20.06",
+    "Age Group": "40-49",
+    "Rank": "2",
+    "Gender": "Male",
+    "id": "019",
+    "label": "Italy"
+  },
+  {
+    "ISO code": "LVA",
+    "Value": "17.35",
+    "Age Group": "40-49",
+    "Rank": "3",
+    "Gender": "Male",
+    "id": "020",
+    "label": "Latvia"
+  },
+  {
+    "ISO code": "LTU",
+    "Value": "14.89",
+    "Age Group": "40-49",
+    "Rank": "4",
+    "Gender": "Male",
+    "id": "022",
+    "label": "Lithuania"
+  },
+  {
+    "ISO code": "LUX",
+    "Value": "11.95",
+    "Age Group": "40-49",
+    "Rank": "5",
+    "Gender": "Male",
+    "id": "023",
+    "label": "Luxembourg"
+  },
+  {
+    "ISO code": "MLT",
+    "Value": "6.88",
+    "Age Group": "40-49",
+    "Rank": "3",
+    "Gender": "Male",
+    "id": "025",
+    "label": "Malta"
+  },
+  {
+    "ISO code": "MNE",
+    "Value": "12.26",
+    "Age Group": "40-49",
+    "Rank": "3",
+    "Gender": "Male",
+    "id": "028",
+    "label": "Montenegro"
+  },
+  {
+    "ISO code": "NOR",
+    "Value": "23.23",
+    "Age Group": "40-49",
+    "Rank": "2",
+    "Gender": "Male",
+    "id": "030",
+    "label": "Norway"
+  },
+  {
+    "ISO code": "POL",
+    "Value": "18.34",
+    "Age Group": "40-49",
+    "Rank": "1",
+    "Gender": "Male",
+    "id": "031",
+    "label": "Poland"
+  },
+  {
+    "ISO code": "PRT",
+    "Value": "31.87",
+    "Age Group": "40-49",
+    "Rank": "1",
+    "Gender": "Male",
+    "id": "032",
+    "label": "Portugal"
+  },
+  {
+    "ISO code": "ROU",
+    "Value": "21.16",
+    "Age Group": "40-49",
+    "Rank": "2",
+    "Gender": "Male",
+    "id": "033",
+    "label": "Romania"
+  },
+  {
+    "ISO code": "SRB",
+    "Value": "29.6",
+    "Age Group": "40-49",
+    "Rank": "2",
+    "Gender": "Male",
+    "id": "035",
+    "label": "Serbia"
+  },
+  {
+    "ISO code": "SVK",
+    "Value": "25.9",
+    "Age Group": "40-49",
+    "Rank": "1",
+    "Gender": "Male",
+    "id": "036",
+    "label": "Slovakia"
+  },
+  {
+    "ISO code": "SVN",
+    "Value": "25.35",
+    "Age Group": "40-49",
+    "Rank": "1",
+    "Gender": "Male",
+    "id": "037",
+    "label": "Slovenia"
+  },
+  {
+    "ISO code": "ESP",
+    "Value": "22.52",
+    "Age Group": "40-49",
+    "Rank": "1",
+    "Gender": "Male",
+    "id": "038",
+    "label": "Spain"
+  },
+  {
+    "ISO code": "SWE",
+    "Value": "17.71",
+    "Age Group": "40-49",
+    "Rank": "2",
+    "Gender": "Male",
+    "id": "039",
+    "label": "Sweden"
+  },
+  {
+    "ISO code": "CHE",
+    "Value": "16.26",
+    "Age Group": "40-49",
+    "Rank": "3",
+    "Gender": "Male",
+    "id": "040",
+    "label": "Switzerland"
+  },
+  {
+    "ISO code": "TUR",
+    "Value": "20.13",
+    "Age Group": "40-49",
+    "Rank": "2",
+    "Gender": "Male",
+    "id": "045",
+    "label": "Turkey"
+  },
+  {
+    "ISO code": "UKR",
+    "Value": "17.72",
+    "Age Group": "40-49",
+    "Rank": "2",
+    "Gender": "Male",
+    "id": "041",
+    "label": "Ukraine"
+  },
+  {
+    "ISO code": "GBR",
+    "Value": "22.87",
+    "Age Group": "40-49",
+    "Rank": "1",
+    "Gender": "Male",
+    "id": "042",
+    "label": "United Kingdom"
+  },
+  {
+    "ISO code": "ALB",
+    "Value": "6.29",
+    "Age Group": "40-49",
+    "Rank": "6",
+    "Gender": "Female",
+    "id": "001",
+    "label": "Albania"
+  },
+  {
+    "ISO code": "AUT",
+    "Value": "15.63",
+    "Age Group": "40-49",
+    "Rank": "4",
+    "Gender": "Female",
+    "id": "003",
+    "label": "Austria"
+  },
+  {
+    "ISO code": "BEL",
+    "Value": "20.78",
+    "Age Group": "40-49",
+    "Rank": "5",
+    "Gender": "Female",
+    "id": "005",
+    "label": "Belgium"
+  },
+  {
+    "ISO code": "BIH",
+    "Value": "23.47",
+    "Age Group": "40-49",
+    "Rank": "3",
+    "Gender": "Female",
+    "id": "006",
+    "label": "Bosnia and Herzegovina"
+  },
+  {
+    "ISO code": "BGR",
+    "Value": "12.62",
+    "Age Group": "40-49",
+    "Rank": "7",
+    "Gender": "Female",
+    "id": "007",
+    "label": "Bulgaria"
+  },
+  {
+    "ISO code": "BLR",
+    "Value": "20.97",
+    "Age Group": "40-49",
+    "Rank": "6",
+    "Gender": "Female",
+    "id": "004",
+    "label": "Belarus"
+  },
+  {
+    "ISO code": "HRV",
+    "Value": "17.56",
+    "Age Group": "40-49",
+    "Rank": "6",
+    "Gender": "Female",
+    "id": "008",
+    "label": "Croatia"
+  },
+  {
+    "ISO code": "CYP",
+    "Value": "15.6",
+    "Age Group": "40-49",
+    "Rank": "4",
+    "Gender": "Female",
+    "id": "044",
+    "label": "Cyprus"
+  },
+  {
+    "ISO code": "DNK",
+    "Value": "22.79",
+    "Age Group": "40-49",
+    "Rank": "3",
+    "Gender": "Female",
+    "id": "010",
+    "label": "Denmark"
+  },
+  {
+    "ISO code": "EST",
+    "Value": "15.22",
+    "Age Group": "40-49",
+    "Rank": "6",
+    "Gender": "Female",
+    "id": "011",
+    "label": "Estonia"
+  },
+  {
+    "ISO code": "FIN",
+    "Value": "18.84",
+    "Age Group": "40-49",
+    "Rank": "4",
+    "Gender": "Female",
+    "id": "012",
+    "label": "Finland"
+  },
+  {
+    "ISO code": "FRA",
+    "Value": "24.76",
+    "Age Group": "40-49",
+    "Rank": "4",
+    "Gender": "Female",
+    "id": "013",
+    "label": "France"
+  },
+  {
+    "ISO code": "DEU",
+    "Value": "20.83",
+    "Age Group": "40-49",
+    "Rank": "3",
+    "Gender": "Female",
+    "id": "014",
+    "label": "Germany"
+  },
+  {
+    "ISO code": "GRC",
+    "Value": "15",
+    "Age Group": "40-49",
+    "Rank": "5",
+    "Gender": "Female",
+    "id": "015",
+    "label": "Greece"
+  },
+  {
+    "ISO code": "HUN",
+    "Value": "26.55",
+    "Age Group": "40-49",
+    "Rank": "4",
+    "Gender": "Female",
+    "id": "016",
+    "label": "Hungary"
+  },
+  {
+    "ISO code": "ISL",
+    "Value": "14.2",
+    "Age Group": "40-49",
+    "Rank": "5",
+    "Gender": "Female",
+    "id": "017",
+    "label": "Iceland"
+  },
+  {
+    "ISO code": "IRL",
+    "Value": "20.36",
+    "Age Group": "40-49",
+    "Rank": "5",
+    "Gender": "Female",
+    "id": "018",
+    "label": "Ireland"
+  },
+  {
+    "ISO code": "ITA",
+    "Value": "22.6",
+    "Age Group": "40-49",
+    "Rank": "4",
+    "Gender": "Female",
+    "id": "019",
+    "label": "Italy"
+  },
+  {
+    "ISO code": "LVA",
+    "Value": "22.69",
+    "Age Group": "40-49",
+    "Rank": "5",
+    "Gender": "Female",
+    "id": "020",
+    "label": "Latvia"
+  },
+  {
+    "ISO code": "LTU",
+    "Value": "16.37",
+    "Age Group": "40-49",
+    "Rank": "7",
+    "Gender": "Female",
+    "id": "022",
+    "label": "Lithuania"
+  },
+  {
+    "ISO code": "LUX",
+    "Value": "15.48",
+    "Age Group": "40-49",
+    "Rank": "5",
+    "Gender": "Female",
+    "id": "023",
+    "label": "Luxembourg"
+  },
+  {
+    "ISO code": "MLT",
+    "Value": "14.21",
+    "Age Group": "40-49",
+    "Rank": "3",
+    "Gender": "Female",
+    "id": "025",
+    "label": "Malta"
+  },
+  {
+    "ISO code": "MNE",
+    "Value": "16.38",
+    "Age Group": "40-49",
+    "Rank": "6",
+    "Gender": "Female",
+    "id": "028",
+    "label": "Montenegro"
+  },
+  {
+    "ISO code": "NOR",
+    "Value": "27.38",
+    "Age Group": "40-49",
+    "Rank": "4",
+    "Gender": "Female",
+    "id": "030",
+    "label": "Norway"
+  },
+  {
+    "ISO code": "POL",
+    "Value": "14.51",
+    "Age Group": "40-49",
+    "Rank": "6",
+    "Gender": "Female",
+    "id": "031",
+    "label": "Poland"
+  },
+  {
+    "ISO code": "PRT",
+    "Value": "22.83",
+    "Age Group": "40-49",
+    "Rank": "4",
+    "Gender": "Female",
+    "id": "032",
+    "label": "Portugal"
+  },
+  {
+    "ISO code": "ROU",
+    "Value": "17.62",
+    "Age Group": "40-49",
+    "Rank": "5",
+    "Gender": "Female",
+    "id": "033",
+    "label": "Romania"
+  },
+  {
+    "ISO code": "SRB",
+    "Value": "23.03",
+    "Age Group": "40-49",
+    "Rank": "4",
+    "Gender": "Female",
+    "id": "035",
+    "label": "Serbia"
+  },
+  {
+    "ISO code": "SVK",
+    "Value": "24.41",
+    "Age Group": "40-49",
+    "Rank": "3",
+    "Gender": "Female",
+    "id": "036",
+    "label": "Slovakia"
+  },
+  {
+    "ISO code": "SVN",
+    "Value": "15.44",
+    "Age Group": "40-49",
+    "Rank": "7",
+    "Gender": "Female",
+    "id": "037",
+    "label": "Slovenia"
+  },
+  {
+    "ISO code": "ESP",
+    "Value": "21.35",
+    "Age Group": "40-49",
+    "Rank": "3",
+    "Gender": "Female",
+    "id": "038",
+    "label": "Spain"
+  },
+  {
+    "ISO code": "SWE",
+    "Value": "17.63",
+    "Age Group": "40-49",
+    "Rank": "4",
+    "Gender": "Female",
+    "id": "039",
+    "label": "Sweden"
+  },
+  {
+    "ISO code": "CHE",
+    "Value": "17.84",
+    "Age Group": "40-49",
+    "Rank": "4",
+    "Gender": "Female",
+    "id": "040",
+    "label": "Switzerland"
+  },
+  {
+    "ISO code": "TUR",
+    "Value": "16.28",
+    "Age Group": "40-49",
+    "Rank": "4",
+    "Gender": "Female",
+    "id": "045",
+    "label": "Turkey"
+  },
+  {
+    "ISO code": "UKR",
+    "Value": "14.81",
+    "Age Group": "40-49",
+    "Rank": "6",
+    "Gender": "Female",
+    "id": "041",
+    "label": "Ukraine"
+  },
+  {
+    "ISO code": "GBR",
+    "Value": "22.08",
+    "Age Group": "40-49",
+    "Rank": "3",
+    "Gender": "Female",
+    "id": "042",
+    "label": "United Kingdom"
+  },
+  {
+    "ISO code": "ALB",
+    "Value": "36.3",
+    "Age Group": "50-85+",
+    "Rank": "5",
+    "Gender": "Male",
+    "id": "001",
+    "label": "Albania"
+  },
+  {
+    "ISO code": "AUT",
+    "Value": "121.22",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Male",
+    "id": "003",
+    "label": "Austria"
+  },
+  {
+    "ISO code": "BEL",
+    "Value": "200.4",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Male",
+    "id": "005",
+    "label": "Belgium"
+  },
+  {
+    "ISO code": "BIH",
+    "Value": "154.36",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Male",
+    "id": "006",
+    "label": "Bosnia and Herzegovina"
+  },
+  {
+    "ISO code": "BGR",
+    "Value": "172.97",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Male",
+    "id": "007",
+    "label": "Bulgaria"
+  },
+  {
+    "ISO code": "BLR",
+    "Value": "183.36",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Male",
+    "id": "004",
+    "label": "Belarus"
+  },
+  {
+    "ISO code": "HRV",
+    "Value": "239.53",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Male",
+    "id": "008",
+    "label": "Croatia"
+  },
+  {
+    "ISO code": "CYP",
+    "Value": "163.93",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Male",
+    "id": "044",
+    "label": "Cyprus"
+  },
+  {
+    "ISO code": "DNK",
+    "Value": "223.07",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Male",
+    "id": "010",
+    "label": "Denmark"
+  },
+  {
+    "ISO code": "EST",
+    "Value": "169.57",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Male",
+    "id": "011",
+    "label": "Estonia"
+  },
+  {
+    "ISO code": "FIN",
+    "Value": "134.17",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Male",
+    "id": "012",
+    "label": "Finland"
+  },
+  {
+    "ISO code": "FRA",
+    "Value": "165.13",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Male",
+    "id": "013",
+    "label": "France"
+  },
+  {
+    "ISO code": "DEU",
+    "Value": "135.39",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Male",
+    "id": "014",
+    "label": "Germany"
+  },
+  {
+    "ISO code": "GRC",
+    "Value": "161.05",
+    "Age Group": "50-85+",
+    "Rank": "4",
+    "Gender": "Male",
+    "id": "015",
+    "label": "Greece"
+  },
+  {
+    "ISO code": "HUN",
+    "Value": "287.18",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Male",
+    "id": "016",
+    "label": "Hungary"
+  },
+  {
+    "ISO code": "ISL",
+    "Value": "150.33",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Male",
+    "id": "017",
+    "label": "Iceland"
+  },
+  {
+    "ISO code": "IRL",
+    "Value": "197.3",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Male",
+    "id": "018",
+    "label": "Ireland"
+  },
+  {
+    "ISO code": "ITA",
+    "Value": "157.91",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Male",
+    "id": "019",
+    "label": "Italy"
+  },
+  {
+    "ISO code": "LVA",
+    "Value": "230.75",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Male",
+    "id": "020",
+    "label": "Latvia"
+  },
+  {
+    "ISO code": "LTU",
+    "Value": "171.13",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Male",
+    "id": "022",
+    "label": "Lithuania"
+  },
+  {
+    "ISO code": "LUX",
+    "Value": "141.13",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Male",
+    "id": "023",
+    "label": "Luxembourg"
+  },
+  {
+    "ISO code": "MLT",
+    "Value": "151.13",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Male",
+    "id": "025",
+    "label": "Malta"
+  },
+  {
+    "ISO code": "MNE",
+    "Value": "168.41",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Male",
+    "id": "028",
+    "label": "Montenegro"
+  },
+  {
+    "ISO code": "NOR",
+    "Value": "208.1",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Male",
+    "id": "030",
+    "label": "Norway"
+  },
+  {
+    "ISO code": "POL",
+    "Value": "194.78",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Male",
+    "id": "031",
+    "label": "Poland"
+  },
+  {
+    "ISO code": "PRT",
+    "Value": "253.02",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Male",
+    "id": "032",
+    "label": "Portugal"
+  },
+  {
+    "ISO code": "ROU",
+    "Value": "194.23",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Male",
+    "id": "033",
+    "label": "Romania"
+  },
+  {
+    "ISO code": "SRB",
+    "Value": "210.79",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Male",
+    "id": "035",
+    "label": "Serbia"
+  },
+  {
+    "ISO code": "SVK",
+    "Value": "283.94",
+    "Age Group": "50-85+",
+    "Rank": "1",
+    "Gender": "Male",
+    "id": "036",
+    "label": "Slovakia"
+  },
+  {
+    "ISO code": "SVN",
+    "Value": "261.54",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Male",
+    "id": "037",
+    "label": "Slovenia"
+  },
+  {
+    "ISO code": "ESP",
+    "Value": "221.68",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Male",
+    "id": "038",
+    "label": "Spain"
+  },
+  {
+    "ISO code": "SWE",
+    "Value": "139.52",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Male",
+    "id": "039",
+    "label": "Sweden"
+  },
+  {
+    "ISO code": "CHE",
+    "Value": "115.34",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Male",
+    "id": "040",
+    "label": "Switzerland"
+  },
+  {
+    "ISO code": "TUR",
+    "Value": "115.34",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Male",
+    "id": "045",
+    "label": "Turkey"
+  },
+  {
+    "ISO code": "UKR",
+    "Value": "155.24",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Male",
+    "id": "041",
+    "label": "Ukraine"
+  },
+  {
+    "ISO code": "GBR",
+    "Value": "181.28",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Male",
+    "id": "042",
+    "label": "United Kingdom"
+  },
+  {
+    "ISO code": "ALB",
+    "Value": "28.89",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Female",
+    "id": "001",
+    "label": "Albania"
+  },
+  {
+    "ISO code": "AUT",
+    "Value": "68.78",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Female",
+    "id": "003",
+    "label": "Austria"
+  },
+  {
+    "ISO code": "BEL",
+    "Value": "122.43",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Female",
+    "id": "005",
+    "label": "Belgium"
+  },
+  {
+    "ISO code": "BIH",
+    "Value": "85.72",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Female",
+    "id": "006",
+    "label": "Bosnia and Herzegovina"
+  },
+  {
+    "ISO code": "BGR",
+    "Value": "91.83",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Female",
+    "id": "007",
+    "label": "Bulgaria"
+  },
+  {
+    "ISO code": "BLR",
+    "Value": "108.65",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Female",
+    "id": "004",
+    "label": "Belarus"
+  },
+  {
+    "ISO code": "HRV",
+    "Value": "110.53",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Female",
+    "id": "008",
+    "label": "Croatia"
+  },
+  {
+    "ISO code": "CYP",
+    "Value": "60.32",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Female",
+    "id": "044",
+    "label": "Cyprus"
+  },
+  {
+    "ISO code": "DNK",
+    "Value": "161.5",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Female",
+    "id": "010",
+    "label": "Denmark"
+  },
+  {
+    "ISO code": "EST",
+    "Value": "109.17",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Female",
+    "id": "011",
+    "label": "Estonia"
+  },
+  {
+    "ISO code": "FIN",
+    "Value": "98.48",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Female",
+    "id": "012",
+    "label": "Finland"
+  },
+  {
+    "ISO code": "FRA",
+    "Value": "104.55",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Female",
+    "id": "013",
+    "label": "France"
+  },
+  {
+    "ISO code": "DEU",
+    "Value": "89.57",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Female",
+    "id": "014",
+    "label": "Germany"
+  },
+  {
+    "ISO code": "GRC",
+    "Value": "91.78",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Female",
+    "id": "015",
+    "label": "Greece"
+  },
+  {
+    "ISO code": "HUN",
+    "Value": "144.58",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Female",
+    "id": "016",
+    "label": "Hungary"
+  },
+  {
+    "ISO code": "ISL",
+    "Value": "112.93",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Female",
+    "id": "017",
+    "label": "Iceland"
+  },
+  {
+    "ISO code": "IRL",
+    "Value": "124.15",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Female",
+    "id": "018",
+    "label": "Ireland"
+  },
+  {
+    "ISO code": "ITA",
+    "Value": "109.92",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Female",
+    "id": "019",
+    "label": "Italy"
+  },
+  {
+    "ISO code": "LVA",
+    "Value": "135.37",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Female",
+    "id": "020",
+    "label": "Latvia"
+  },
+  {
+    "ISO code": "LTU",
+    "Value": "99.25",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Female",
+    "id": "022",
+    "label": "Lithuania"
+  },
+  {
+    "ISO code": "LUX",
+    "Value": "106.67",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Female",
+    "id": "023",
+    "label": "Luxembourg"
+  },
+  {
+    "ISO code": "MLT",
+    "Value": "95.61",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Female",
+    "id": "025",
+    "label": "Malta"
+  },
+  {
+    "ISO code": "MNE",
+    "Value": "95.5",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Female",
+    "id": "028",
+    "label": "Montenegro"
+  },
+  {
+    "ISO code": "NOR",
+    "Value": "169.2",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Female",
+    "id": "030",
+    "label": "Norway"
+  },
+  {
+    "ISO code": "POL",
+    "Value": "98.79",
+    "Age Group": "50-85+",
+    "Rank": "4",
+    "Gender": "Female",
+    "id": "031",
+    "label": "Poland"
+  },
+  {
+    "ISO code": "PRT",
+    "Value": "114.65",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Female",
+    "id": "032",
+    "label": "Portugal"
+  },
+  {
+    "ISO code": "ROU",
+    "Value": "98.24",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Female",
+    "id": "033",
+    "label": "Romania"
+  },
+  {
+    "ISO code": "SRB",
+    "Value": "96.69",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Female",
+    "id": "035",
+    "label": "Serbia"
+  },
+  {
+    "ISO code": "SVK",
+    "Value": "137.64",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Female",
+    "id": "036",
+    "label": "Slovakia"
+  },
+  {
+    "ISO code": "SVN",
+    "Value": "116.53",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Female",
+    "id": "037",
+    "label": "Slovenia"
+  },
+  {
+    "ISO code": "ESP",
+    "Value": "111.63",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Female",
+    "id": "038",
+    "label": "Spain"
+  },
+  {
+    "ISO code": "SWE",
+    "Value": "112.51",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Female",
+    "id": "039",
+    "label": "Sweden"
+  },
+  {
+    "ISO code": "CHE",
+    "Value": "82.14",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Female",
+    "id": "040",
+    "label": "Switzerland"
+  },
+  {
+    "ISO code": "TUR",
+    "Value": "67.65",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Female",
+    "id": "045",
+    "label": "Turkey"
+  },
+  {
+    "ISO code": "UKR",
+    "Value": "91.4",
+    "Age Group": "50-85+",
+    "Rank": "2",
+    "Gender": "Female",
+    "id": "041",
+    "label": "Ukraine"
+  },
+  {
+    "ISO code": "GBR",
+    "Value": "125.16",
+    "Age Group": "50-85+",
+    "Rank": "3",
+    "Gender": "Female",
+    "id": "042",
+    "label": "United Kingdom"
+  }
+]
