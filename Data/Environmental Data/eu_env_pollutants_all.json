@@ -1,0 +1,666 @@
+[
+  {
+    "Pollutant": "NO2",
+    "Value": "14.3",
+    "Country": "Austria",
+    "id": "003"
+  },
+  {
+    "Pollutant": "O3",
+    "Value": "4584.1",
+    "Country": "Austria",
+    "id": "003"
+  },
+  {
+    "Pollutant": "PM10",
+    "Value": "14.6",
+    "Country": "Austria",
+    "id": "003"
+  },
+  {
+    "Pollutant": "PM2.5",
+    "Value": "9.9",
+    "Country": "Austria",
+    "id": "003"
+  },
+  {
+    "Pollutant": "NO2",
+    "Value": "14.4",
+    "Country": "Belgium",
+    "id": "005"
+  },
+  {
+    "Pollutant": "O3",
+    "Value": "3799.7",
+    "Country": "Belgium",
+    "id": "005"
+  },
+  {
+    "Pollutant": "PM10",
+    "Value": "17.4",
+    "Country": "Belgium",
+    "id": "005"
+  },
+  {
+    "Pollutant": "PM2.5",
+    "Value": "9.4",
+    "Country": "Belgium",
+    "id": "005"
+  },
+  {
+    "Pollutant": "NO2",
+    "Value": "16.7",
+    "Country": "Bulgaria",
+    "id": "007"
+  },
+  {
+    "Pollutant": "O3",
+    "Value": "2967.3",
+    "Country": "Bulgaria",
+    "id": "007"
+  },
+  {
+    "Pollutant": "PM10",
+    "Value": "26.0",
+    "Country": "Bulgaria",
+    "id": "007"
+  },
+  {
+    "Pollutant": "PM2.5",
+    "Value": "17.0",
+    "Country": "Bulgaria",
+    "id": "007"
+  },
+  {
+    "Pollutant": "NO2",
+    "Value": "20.8",
+    "Country": "Cyprus",
+    "id": "044"
+  },
+  {
+    "Pollutant": "O3",
+    "Value": "6295.7",
+    "Country": "Cyprus",
+    "id": "044"
+  },
+  {
+    "Pollutant": "PM10",
+    "Value": "32.4",
+    "Country": "Cyprus",
+    "id": "044"
+  },
+  {
+    "Pollutant": "PM2.5",
+    "Value": "14.0",
+    "Country": "Cyprus",
+    "id": "044"
+  },
+  {
+    "Pollutant": "NO2",
+    "Value": "12.5",
+    "Country": "Czechia"
+  },
+  {
+    "Pollutant": "O3",
+    "Value": "4251.8",
+    "Country": "Czechia"
+  },
+  {
+    "Pollutant": "PM10",
+    "Value": "17.5",
+    "Country": "Czechia"
+  },
+  {
+    "Pollutant": "PM2.5",
+    "Value": "12.5",
+    "Country": "Czechia"
+  },
+  {
+    "Pollutant": "NO2",
+    "Value": "15.2",
+    "Country": "Germany",
+    "id": "014"
+  },
+  {
+    "Pollutant": "O3",
+    "Value": "4195.3",
+    "Country": "Germany",
+    "id": "014"
+  },
+  {
+    "Pollutant": "PM10",
+    "Value": "14.2",
+    "Country": "Germany",
+    "id": "014"
+  },
+  {
+    "Pollutant": "PM2.5",
+    "Value": "9.1",
+    "Country": "Germany",
+    "id": "014"
+  },
+  {
+    "Pollutant": "NO2",
+    "Value": "7.5",
+    "Country": "Denmark",
+    "id": "010"
+  },
+  {
+    "Pollutant": "O3",
+    "Value": "2287.4",
+    "Country": "Denmark",
+    "id": "010"
+  },
+  {
+    "Pollutant": "PM10",
+    "Value": "14.1",
+    "Country": "Denmark",
+    "id": "010"
+  },
+  {
+    "Pollutant": "PM2.5",
+    "Value": "7.6",
+    "Country": "Denmark",
+    "id": "010"
+  },
+  {
+    "Pollutant": "NO2",
+    "Value": "5.8",
+    "Country": "Estonia",
+    "id": "011"
+  },
+  {
+    "Pollutant": "O3",
+    "Value": "1467.8",
+    "Country": "Estonia",
+    "id": "011"
+  },
+  {
+    "Pollutant": "PM10",
+    "Value": "10.9",
+    "Country": "Estonia",
+    "id": "011"
+  },
+  {
+    "Pollutant": "PM2.5",
+    "Value": "5.4",
+    "Country": "Estonia",
+    "id": "011"
+  },
+  {
+    "Pollutant": "NO2",
+    "Value": "14.6",
+    "Country": "Spain",
+    "id": "038"
+  },
+  {
+    "Pollutant": "O3",
+    "Value": "4523.7",
+    "Country": "Spain",
+    "id": "038"
+  },
+  {
+    "Pollutant": "PM10",
+    "Value": "18.7",
+    "Country": "Spain",
+    "id": "038"
+  },
+  {
+    "Pollutant": "PM2.5",
+    "Value": "10.0",
+    "Country": "Spain",
+    "id": "038"
+  },
+  {
+    "Pollutant": "NO2",
+    "Value": "14.1",
+    "Country": "European Union Countries"
+  },
+  {
+    "Pollutant": "O3",
+    "Value": "4182.4",
+    "Country": "European Union Countries"
+  },
+  {
+    "Pollutant": "PM10",
+    "Value": "18.2",
+    "Country": "European Union Countries"
+  },
+  {
+    "Pollutant": "PM2.5",
+    "Value": "11.2",
+    "Country": "European Union Countries"
+  },
+  {
+    "Pollutant": "NO2",
+    "Value": "6.2",
+    "Country": "Finland",
+    "id": "012"
+  },
+  {
+    "Pollutant": "O3",
+    "Value": "1365.2",
+    "Country": "Finland",
+    "id": "012"
+  },
+  {
+    "Pollutant": "PM10",
+    "Value": "8.7",
+    "Country": "Finland",
+    "id": "012"
+  },
+  {
+    "Pollutant": "PM2.5",
+    "Value": "4.4",
+    "Country": "Finland",
+    "id": "012"
+  },
+  {
+    "Pollutant": "NO2",
+    "Value": "12.2",
+    "Country": "France",
+    "id": "013"
+  },
+  {
+    "Pollutant": "O3",
+    "Value": "4271.9",
+    "Country": "France",
+    "id": "013"
+  },
+  {
+    "Pollutant": "PM10",
+    "Value": "15.0",
+    "Country": "France",
+    "id": "013"
+  },
+  {
+    "Pollutant": "PM2.5",
+    "Value": "8.6",
+    "Country": "France",
+    "id": "013"
+  },
+  {
+    "Pollutant": "NO2",
+    "Value": "16.9",
+    "Country": "Greece",
+    "id": "015"
+  },
+  {
+    "Pollutant": "O3",
+    "Value": "6164.9",
+    "Country": "Greece",
+    "id": "015"
+  },
+  {
+    "Pollutant": "PM10",
+    "Value": "23.9",
+    "Country": "Greece",
+    "id": "015"
+  },
+  {
+    "Pollutant": "PM2.5",
+    "Value": "14.5",
+    "Country": "Greece",
+    "id": "015"
+  },
+  {
+    "Pollutant": "NO2",
+    "Value": "13.1",
+    "Country": "Croatia",
+    "id": "008"
+  },
+  {
+    "Pollutant": "O3",
+    "Value": "4758.5",
+    "Country": "Croatia",
+    "id": "008"
+  },
+  {
+    "Pollutant": "PM10",
+    "Value": "22.8",
+    "Country": "Croatia",
+    "id": "008"
+  },
+  {
+    "Pollutant": "PM2.5",
+    "Value": "15.4",
+    "Country": "Croatia",
+    "id": "008"
+  },
+  {
+    "Pollutant": "NO2",
+    "Value": "14.9",
+    "Country": "Hungary",
+    "id": "016"
+  },
+  {
+    "Pollutant": "O3",
+    "Value": "4044.2",
+    "Country": "Hungary",
+    "id": "016"
+  },
+  {
+    "Pollutant": "PM10",
+    "Value": "21.5",
+    "Country": "Hungary",
+    "id": "016"
+  },
+  {
+    "Pollutant": "PM2.5",
+    "Value": "14.5",
+    "Country": "Hungary",
+    "id": "016"
+  },
+  {
+    "Pollutant": "NO2",
+    "Value": "7.4",
+    "Country": "Ireland",
+    "id": "018"
+  },
+  {
+    "Pollutant": "O3",
+    "Value": "1909.8",
+    "Country": "Ireland",
+    "id": "018"
+  },
+  {
+    "Pollutant": "PM10",
+    "Value": "11.4",
+    "Country": "Ireland",
+    "id": "018"
+  },
+  {
+    "Pollutant": "PM2.5",
+    "Value": "7.1",
+    "Country": "Ireland",
+    "id": "018"
+  },
+  {
+    "Pollutant": "NO2",
+    "Value": "17.7",
+    "Country": "Italy",
+    "id": "019"
+  },
+  {
+    "Pollutant": "O3",
+    "Value": "6066.6",
+    "Country": "Italy",
+    "id": "019"
+  },
+  {
+    "Pollutant": "PM10",
+    "Value": "23.9",
+    "Country": "Italy",
+    "id": "019"
+  },
+  {
+    "Pollutant": "PM2.5",
+    "Value": "15.0",
+    "Country": "Italy",
+    "id": "019"
+  },
+  {
+    "Pollutant": "NO2",
+    "Value": "10.1",
+    "Country": "Lithuania",
+    "id": "022"
+  },
+  {
+    "Pollutant": "O3",
+    "Value": "2043.9",
+    "Country": "Lithuania",
+    "id": "022"
+  },
+  {
+    "Pollutant": "PM10",
+    "Value": "18.5",
+    "Country": "Lithuania",
+    "id": "022"
+  },
+  {
+    "Pollutant": "PM2.5",
+    "Value": "9.8",
+    "Country": "Lithuania",
+    "id": "022"
+  },
+  {
+    "Pollutant": "NO2",
+    "Value": "15.7",
+    "Country": "Luxembourg",
+    "id": "023"
+  },
+  {
+    "Pollutant": "O3",
+    "Value": "4272.3",
+    "Country": "Luxembourg",
+    "id": "023"
+  },
+  {
+    "Pollutant": "PM10",
+    "Value": "14.9",
+    "Country": "Luxembourg",
+    "id": "023"
+  },
+  {
+    "Pollutant": "PM2.5",
+    "Value": "7.3",
+    "Country": "Luxembourg",
+    "id": "023"
+  },
+  {
+    "Pollutant": "NO2",
+    "Value": "9.6",
+    "Country": "Latvia",
+    "id": "020"
+  },
+  {
+    "Pollutant": "O3",
+    "Value": "1698.6",
+    "Country": "Latvia",
+    "id": "020"
+  },
+  {
+    "Pollutant": "PM10",
+    "Value": "17.0",
+    "Country": "Latvia",
+    "id": "020"
+  },
+  {
+    "Pollutant": "PM2.5",
+    "Value": "9.1",
+    "Country": "Latvia",
+    "id": "020"
+  },
+  {
+    "Pollutant": "NO2",
+    "Value": "11.0",
+    "Country": "Malta",
+    "id": "025"
+  },
+  {
+    "Pollutant": "O3",
+    "Value": "6591.9",
+    "Country": "Malta",
+    "id": "025"
+  },
+  {
+    "Pollutant": "PM10",
+    "Value": "25.2",
+    "Country": "Malta",
+    "id": "025"
+  },
+  {
+    "Pollutant": "PM2.5",
+    "Value": "10.1",
+    "Country": "Malta",
+    "id": "025"
+  },
+  {
+    "Pollutant": "NO2",
+    "Value": "15.9",
+    "Country": "Netherlands",
+    "id": "029"
+  },
+  {
+    "Pollutant": "O3",
+    "Value": "3426.7",
+    "Country": "Netherlands",
+    "id": "029"
+  },
+  {
+    "Pollutant": "PM10",
+    "Value": "16.5",
+    "Country": "Netherlands",
+    "id": "029"
+  },
+  {
+    "Pollutant": "PM2.5",
+    "Value": "9.2",
+    "Country": "Netherlands",
+    "id": "029"
+  },
+  {
+    "Pollutant": "NO2",
+    "Value": "13.0",
+    "Country": "Poland",
+    "id": "031"
+  },
+  {
+    "Pollutant": "O3",
+    "Value": "3216.1",
+    "Country": "Poland",
+    "id": "031"
+  },
+  {
+    "Pollutant": "PM10",
+    "Value": "22.7",
+    "Country": "Poland",
+    "id": "031"
+  },
+  {
+    "Pollutant": "PM2.5",
+    "Value": "16.0",
+    "Country": "Poland",
+    "id": "031"
+  },
+  {
+    "Pollutant": "NO2",
+    "Value": "12.5",
+    "Country": "Portugal",
+    "id": "032"
+  },
+  {
+    "Pollutant": "O3",
+    "Value": "3583.2",
+    "Country": "Portugal",
+    "id": "032"
+  },
+  {
+    "Pollutant": "PM10",
+    "Value": "17.6",
+    "Country": "Portugal",
+    "id": "032"
+  },
+  {
+    "Pollutant": "PM2.5",
+    "Value": "8.1",
+    "Country": "Portugal",
+    "id": "032"
+  },
+  {
+    "Pollutant": "NO2",
+    "Value": "15.2",
+    "Country": "Romania",
+    "id": "033"
+  },
+  {
+    "Pollutant": "O3",
+    "Value": "2955.2",
+    "Country": "Romania",
+    "id": "033"
+  },
+  {
+    "Pollutant": "PM10",
+    "Value": "23.2",
+    "Country": "Romania",
+    "id": "033"
+  },
+  {
+    "Pollutant": "PM2.5",
+    "Value": "15.2",
+    "Country": "Romania",
+    "id": "033"
+  },
+  {
+    "Pollutant": "NO2",
+    "Value": "6.5",
+    "Country": "Sweden",
+    "id": "039"
+  },
+  {
+    "Pollutant": "O3",
+    "Value": "2182.7",
+    "Country": "Sweden",
+    "id": "039"
+  },
+  {
+    "Pollutant": "PM10",
+    "Value": "10.2",
+    "Country": "Sweden",
+    "id": "039"
+  },
+  {
+    "Pollutant": "PM2.5",
+    "Value": "4.8",
+    "Country": "Sweden",
+    "id": "039"
+  },
+  {
+    "Pollutant": "NO2",
+    "Value": "12.8",
+    "Country": "Slovenia",
+    "id": "037"
+  },
+  {
+    "Pollutant": "O3",
+    "Value": "5007.4",
+    "Country": "Slovenia",
+    "id": "037"
+  },
+  {
+    "Pollutant": "PM10",
+    "Value": "18.0",
+    "Country": "Slovenia",
+    "id": "037"
+  },
+  {
+    "Pollutant": "PM2.5",
+    "Value": "12.5",
+    "Country": "Slovenia",
+    "id": "037"
+  },
+  {
+    "Pollutant": "NO2",
+    "Value": "11.3",
+    "Country": "Slovakia",
+    "id": "036"
+  },
+  {
+    "Pollutant": "O3",
+    "Value": "3866.7",
+    "Country": "Slovakia",
+    "id": "036"
+  },
+  {
+    "Pollutant": "PM10",
+    "Value": "20.1",
+    "Country": "Slovakia",
+    "id": "036"
+  },
+  {
+    "Pollutant": "PM2.5",
+    "Value": "14.5",
+    "Country": "Slovakia",
+    "id": "036"
+  }
+]
