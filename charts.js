@@ -1,7 +1,7 @@
 var pivot = new WebDataRocks({
     container: "#wdr-component",
     toolbar: false,
-    height: 400,
+    height: 500,
     width: "100%",
     report: {
         dataSource: {
@@ -42,7 +42,7 @@ function createFusionChart() {
         "type": "stackedcolumn2d",
         "renderAt": "fusionchartContainer",
         "width": "100%",
-        "height": 400
+        "height": 500
     });
 
     pivot.fusioncharts.getData({
@@ -60,7 +60,7 @@ function createPieChart() {
         type: "pie2d",
         renderAt: "fusionchartPie",
         width: "100%",
-        height: 400
+        height: 500
     });
     pivot.fusioncharts.getData({
         type: chart.chartType(),
@@ -85,7 +85,7 @@ function createPieChart() {
     }, function (data) {
         chart.setJSONData(data);
         chart.setChartAttribute("theme", "fusion");
-        chart.setChartAttribute("caption", "Total CRC Incidents by Gender");
+        chart.setChartAttribute("caption", "Percentage of CRC Incidents by Gender");
         chart.setChartAttribute("paletteColors", "#9d87f5, #faa27f, #9afa7f, #e37ffa, #7de1fa, #f8fa7f");
         chart.render();
     });
@@ -96,7 +96,7 @@ function createBarChart() {
         type: "bar2d",
         renderAt: "fusionchartBar",
         width: "100%",
-        height: 400
+        height: 500
     });
     pivot.fusioncharts.getData({
         type: chart.chartType(), "slice": {
@@ -136,14 +136,15 @@ function createMapChart() {
             type: 'maps/europe',
             renderAt: 'mapContainer',
             width: '100%',
-            height: '800',
+            height: '1000',
             dataFormat: 'json',
             dataSource: {
                 "chart": {
                     "caption": "Total CRC Incident for each EU Country",
                     "subcaption": "Per 100000 people",
                     "theme": "fusion",
-                    "formatNumberScale": "0"
+                    "formatNumberScale": "0",
+                    "showlabels": "1",
                 },
                 "colorrange": {
                     "minvalue": "0",
@@ -176,7 +177,7 @@ function createMapChart() {
                 "data": [
                     {
                         "id": "030",
-                        "value": "427.91003"
+                        "value": "427.91"
                     },
                     {
                         "id": "031",
@@ -192,7 +193,7 @@ function createMapChart() {
                     },
                     {
                         "id": "011",
-                        "value": "305.40002"
+                        "value": "305.40"
                     },
                     {
                         "id": "033",
@@ -224,7 +225,7 @@ function createMapChart() {
                     },
                     {
                         "id": "037",
-                        "value": "418.86002"
+                        "value": "418.86"
                     },
                     {
                         "id": "016",
@@ -244,7 +245,7 @@ function createMapChart() {
                     },
                     {
                         "id": "018",
-                        "value": "362.36002"
+                        "value": "362.36"
                     },
                     {
                         "id": "019",
@@ -280,11 +281,11 @@ function createMapChart() {
                     },
                     {
                         "id": "023",
-                        "value": "275.22998"
+                        "value": "275.22"
                     },
                     {
                         "id": "045",
-                        "value": "219.4"
+                        "value": "219.40"
                     },
                     {
                         "id": "003",
@@ -292,7 +293,7 @@ function createMapChart() {
                     },
                     {
                         "id": "025",
-                        "value": "267.83002"
+                        "value": "267.83"
                     },
                     {
                         "id": "004",
@@ -300,7 +301,7 @@ function createMapChart() {
                     },
                     {
                         "id": "005",
-                        "value": "364.91998"
+                        "value": "364.91"
                     },
                     {
                         "id": "006",
