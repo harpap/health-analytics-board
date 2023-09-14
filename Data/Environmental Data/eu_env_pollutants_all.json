@@ -213,26 +213,6 @@
   },
   {
     "Pollutant": "NO2",
-    "Value": "14.1",
-    "Country": "European Union Countries"
-  },
-  {
-    "Pollutant": "O3",
-    "Value": "4182.4",
-    "Country": "European Union Countries"
-  },
-  {
-    "Pollutant": "PM10",
-    "Value": "18.2",
-    "Country": "European Union Countries"
-  },
-  {
-    "Pollutant": "PM2.5",
-    "Value": "11.2",
-    "Country": "European Union Countries"
-  },
-  {
-    "Pollutant": "NO2",
     "Value": "6.2",
     "Country": "Finland",
     "id": "012"
