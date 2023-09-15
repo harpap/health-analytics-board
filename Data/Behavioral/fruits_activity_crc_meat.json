@@ -1,258 +1,258 @@
 [
-  {
-    "id": "3",
-    "Country": "Austria",
-    "Fruits and Vegetables": "5.6",
-    "Physical Activity": "32.1",
-    "Meat Consumption": "87",
-    "CRC Incidents": "220.52"
-  },
-  {
-    "id": "5",
-    "Country": "Belgium",
-    "Fruits and Vegetables": "15.1",
-    "Physical Activity": "47.3",
-    "Meat Consumption": "55",
-    "CRC Incidents": "364.92"
-  },
-  {
-    "id": 7,
-    "Country": "Bulgaria",
-    "Fruits and Vegetables": 5,
-    "Physical Activity": 80.9,
-    "Meat Consumption": 60,
-    "CRC Incidents": 289.94
-  },
-  {
-    "id": 8,
-    "Country": "Croatia",
-    "Fruits and Vegetables": 9.8,
-    "Physical Activity": 63.1,
-    "Meat Consumption": 80,
-    "CRC Incidents": 387.57
-  },
-  {
-    "id": 44,
-    "Country": "Cyprus",
-    "Fruits and Vegetables": 7.9,
-    "Physical Activity": 64.5,
-    "Meat Consumption": 77,
-    "CRC Incidents": 259.86
-  },
-  {
-    "id": 9,
-    "Country": "Czechia",
-    "Fruits and Vegetables": 7.7,
-    "Physical Activity": 51.9,
-    "Meat Consumption": 84,
-    "CRC Incidents": ""
-  },
-  {
-    "id": 10,
-    "Country": "Denmark",
-    "Fruits and Vegetables": 22.9,
-    "Physical Activity": 17.5,
-    "Meat Consumption": 79,
-    "CRC Incidents": 425.67
-  },
-  {
-    "id": 11,
-    "Country": "Estonia",
-    "Fruits and Vegetables": 13.3,
-    "Physical Activity": 48.1,
-    "Meat Consumption": 69,
-    "CRC Incidents": 305.4
-  },
-  {
-    "id": 12,
-    "Country": "Finland",
-    "Fruits and Vegetables": 13.5,
-    "Physical Activity": "",
-    "Meat Consumption": 78,
-    "CRC Incidents": 267.13
-  },
-  {
-    "id": 13,
-    "Country": "France",
-    "Fruits and Vegetables": 19.5,
-    "Physical Activity": 48.8,
-    "Meat Consumption": 79,
-    "CRC Incidents": 317.07
-  },
-  {
-    "id": 14,
-    "Country": "Germany",
-    "Fruits and Vegetables": 10.9,
-    "Physical Activity": 27.5,
-    "Meat Consumption": 79,
-    "CRC Incidents": 264.93
-  },
-  {
-    "id": 15,
-    "Country": "Greece",
-    "Fruits and Vegetables": 12.4,
-    "Physical Activity": 67.8,
-    "Meat Consumption": 73,
-    "CRC Incidents": 282.94
-  },
-  {
-    "id": 16,
-    "Country": "Hungary",
-    "Fruits and Vegetables": 8.2,
-    "Physical Activity": 40.6,
-    "Meat Consumption": 84,
-    "CRC Incidents": 490.07
-  },
-  {
-    "id": 17,
-    "Country": "Iceland",
-    "Fruits and Vegetables": 9.1,
-    "Physical Activity": 27.1,
-    "Meat Consumption": 91,
-    "CRC Incidents": 300.56
-  },
-  {
-    "id": 18,
-    "Country": "Ireland",
-    "Fruits and Vegetables": 32.9,
-    "Physical Activity": 48.9,
-    "Meat Consumption": 78,
-    "CRC Incidents": 362.36
-  },
-  {
-    "id": 19,
-    "Country": "Italy",
-    "Fruits and Vegetables": 10.5,
-    "Physical Activity": 63.8,
-    "Meat Consumption": 82,
-    "CRC Incidents": 310.49
-  },
-  {
-    "id": 20,
-    "Country": "Latvia",
-    "Fruits and Vegetables": 7.2,
-    "Physical Activity": 53.4,
-    "Meat Consumption": 71,
-    "CRC Incidents": 406.16
-  },
-  {
-    "id": 22,
-    "Country": "Lithuania",
-    "Fruits and Vegetables": 15.9,
-    "Physical Activity": 59.1,
-    "Meat Consumption": 84,
-    "CRC Incidents": 301.64
-  },
-  {
-    "id": 23,
-    "Country": "Luxembourg",
-    "Fruits and Vegetables": 13.6,
-    "Physical Activity": 33.4,
-    "Meat Consumption": 82,
-    "CRC Incidents": 275.23
-  },
-  {
-    "id": 25,
-    "Country": "Malta",
-    "Fruits and Vegetables": 11.6,
-    "Physical Activity": 71.6,
-    "Meat Consumption": 78,
-    "CRC Incidents": 267.83
-  },
-  {
-    "id": 29,
-    "Country": "Netherlands",
-    "Fruits and Vegetables": 29.5,
-    "Physical Activity": 23.4,
-    "Meat Consumption": 69,
-    "CRC Incidents": ""
-  },
-  {
-    "id": 30,
-    "Country": "Norway",
-    "Fruits and Vegetables": 8.6,
-    "Physical Activity": 14.1,
-    "Meat Consumption": 68,
-    "CRC Incidents": 427.91
-  },
-  {
-    "id": 31,
-    "Country": "Poland",
-    "Fruits and Vegetables": 8.6,
-    "Physical Activity": 56.1,
-    "Meat Consumption": 88,
-    "CRC Incidents": 326.42
-  },
-  {
-    "id": 32,
-    "Country": "Portugal",
-    "Fruits and Vegetables": 14.4,
-    "Physical Activity": 65.6,
-    "Meat Consumption": 95,
-    "CRC Incidents": 422.37
-  },
-  {
-    "id": 33,
-    "Country": "Romania",
-    "Fruits and Vegetables": 2.4,
-    "Physical Activity": 84,
-    "Meat Consumption": 65,
-    "CRC Incidents": 331.25
-  },
-  {
-    "id": 35,
-    "Country": "Serbia",
-    "Fruits and Vegetables": 8.1,
-    "Physical Activity": 68.8,
-    "Meat Consumption": 56,
-    "CRC Incidents": 360.11
-  },
-  {
-    "id": 36,
-    "Country": "Slovakia",
-    "Fruits and Vegetables": 8.5,
-    "Physical Activity": 48.1,
-    "Meat Consumption": 57,
-    "CRC Incidents": 471.89
-  },
-  {
-    "id": 37,
-    "Country": "Slovenia",
-    "Fruits and Vegetables": 5.3,
-    "Physical Activity": 48.2,
-    "Meat Consumption": 70,
-    "CRC Incidents": 418.86
-  },
-  {
-    "id": 38,
-    "Country": "Spain",
-    "Fruits and Vegetables": 10.9,
-    "Physical Activity": 48.3,
-    "Meat Consumption": 99,
-    "CRC Incidents": 377.18
-  },
-  {
-    "id": 39,
-    "Country": "Sweden",
-    "Fruits and Vegetables": 7.6,
-    "Physical Activity": 23.8,
-    "Meat Consumption": 73,
-    "CRC Incidents": 287.37
-  },
-  {
-    "id": 45,
-    "Country": "Turkey",
-    "Fruits and Vegetables": 2.8,
-    "Physical Activity": 87.7,
-    "Meat Consumption": 39,
-    "CRC Incidents": 219.4
-  },
-  {
-    "id": 42,
-    "Country": "United Kingdom",
-    "Fruits and Vegetables": "",
-    "Physical Activity": "",
-    "Meat Consumption": 77,
-    "CRC Incidents": 351.39
-  }
+	{
+		"CRC Incidents": "220.52",
+		"Fruits and Vegetables": "5.6",
+		"Country": "Austria",
+		"id": "3",
+		"Physical Activity": "32.1",
+		"Meat Consumption": "87"
+	},
+	{
+		"CRC Incidents": "364.92",
+		"Fruits and Vegetables": "15.1",
+		"Country": "Belgium",
+		"id": "5",
+		"Physical Activity": "47.3",
+		"Meat Consumption": "55"
+	},
+	{
+		"CRC Incidents": "289.94",
+		"Fruits and Vegetables": "5.0",
+		"Country": "Bulgaria",
+		"id": "7",
+		"Physical Activity": "80.9",
+		"Meat Consumption": "60"
+	},
+	{
+		"CRC Incidents": "387.57",
+		"Fruits and Vegetables": "9.8",
+		"Country": "Croatia",
+		"id": "8",
+		"Physical Activity": "63.1",
+		"Meat Consumption": "80"
+	},
+	{
+		"CRC Incidents": "259.86",
+		"Fruits and Vegetables": "7.9",
+		"Country": "Cyprus",
+		"id": "44",
+		"Physical Activity": "64.5",
+		"Meat Consumption": "77"
+	},
+	{
+		"CRC Incidents": "0.0",
+		"Fruits and Vegetables": "7.7",
+		"Country": "Czechia",
+		"id": "9",
+		"Physical Activity": "51.9",
+		"Meat Consumption": "84"
+	},
+	{
+		"CRC Incidents": "425.67",
+		"Fruits and Vegetables": "22.9",
+		"Country": "Denmark",
+		"id": "10",
+		"Physical Activity": "17.5",
+		"Meat Consumption": "79"
+	},
+	{
+		"CRC Incidents": "305.4",
+		"Fruits and Vegetables": "13.3",
+		"Country": "Estonia",
+		"id": "11",
+		"Physical Activity": "48.1",
+		"Meat Consumption": "69"
+	},
+	{
+		"CRC Incidents": "267.13",
+		"Fruits and Vegetables": "13.5",
+		"Country": "Finland",
+		"id": "12",
+		"Physical Activity": "0.0",
+		"Meat Consumption": "78"
+	},
+	{
+		"CRC Incidents": "317.07",
+		"Fruits and Vegetables": "19.5",
+		"Country": "France",
+		"id": "13",
+		"Physical Activity": "48.8",
+		"Meat Consumption": "79"
+	},
+	{
+		"CRC Incidents": "264.93",
+		"Fruits and Vegetables": "10.9",
+		"Country": "Germany",
+		"id": "14",
+		"Physical Activity": "27.5",
+		"Meat Consumption": "79"
+	},
+	{
+		"CRC Incidents": "282.94",
+		"Fruits and Vegetables": "12.4",
+		"Country": "Greece",
+		"id": "15",
+		"Physical Activity": "67.8",
+		"Meat Consumption": "73"
+	},
+	{
+		"CRC Incidents": "490.07",
+		"Fruits and Vegetables": "8.2",
+		"Country": "Hungary",
+		"id": "16",
+		"Physical Activity": "40.6",
+		"Meat Consumption": "84"
+	},
+	{
+		"CRC Incidents": "300.56",
+		"Fruits and Vegetables": "9.1",
+		"Country": "Iceland",
+		"id": "17",
+		"Physical Activity": "27.1",
+		"Meat Consumption": "91"
+	},
+	{
+		"CRC Incidents": "362.36",
+		"Fruits and Vegetables": "32.9",
+		"Country": "Ireland",
+		"id": "18",
+		"Physical Activity": "48.9",
+		"Meat Consumption": "78"
+	},
+	{
+		"CRC Incidents": "310.49",
+		"Fruits and Vegetables": "10.5",
+		"Country": "Italy",
+		"id": "19",
+		"Physical Activity": "63.8",
+		"Meat Consumption": "82"
+	},
+	{
+		"CRC Incidents": "406.16",
+		"Fruits and Vegetables": "7.2",
+		"Country": "Latvia",
+		"id": "20",
+		"Physical Activity": "53.4",
+		"Meat Consumption": "71"
+	},
+	{
+		"CRC Incidents": "301.64",
+		"Fruits and Vegetables": "15.9",
+		"Country": "Lithuania",
+		"id": "22",
+		"Physical Activity": "59.1",
+		"Meat Consumption": "84"
+	},
+	{
+		"CRC Incidents": "275.23",
+		"Fruits and Vegetables": "13.6",
+		"Country": "Luxembourg",
+		"id": "23",
+		"Physical Activity": "33.4",
+		"Meat Consumption": "82"
+	},
+	{
+		"CRC Incidents": "267.83",
+		"Fruits and Vegetables": "11.6",
+		"Country": "Malta",
+		"id": "25",
+		"Physical Activity": "71.6",
+		"Meat Consumption": "78"
+	},
+	{
+		"CRC Incidents": "0.0",
+		"Fruits and Vegetables": "29.5",
+		"Country": "Netherlands",
+		"id": "29",
+		"Physical Activity": "23.4",
+		"Meat Consumption": "69"
+	},
+	{
+		"CRC Incidents": "427.91",
+		"Fruits and Vegetables": "8.6",
+		"Country": "Norway",
+		"id": "30",
+		"Physical Activity": "14.1",
+		"Meat Consumption": "68"
+	},
+	{
+		"CRC Incidents": "326.42",
+		"Fruits and Vegetables": "8.6",
+		"Country": "Poland",
+		"id": "31",
+		"Physical Activity": "56.1",
+		"Meat Consumption": "88"
+	},
+	{
+		"CRC Incidents": "422.37",
+		"Fruits and Vegetables": "14.4",
+		"Country": "Portugal",
+		"id": "32",
+		"Physical Activity": "65.6",
+		"Meat Consumption": "95"
+	},
+	{
+		"CRC Incidents": "331.25",
+		"Fruits and Vegetables": "2.4",
+		"Country": "Romania",
+		"id": "33",
+		"Physical Activity": "84.0",
+		"Meat Consumption": "65"
+	},
+	{
+		"CRC Incidents": "360.11",
+		"Fruits and Vegetables": "8.1",
+		"Country": "Serbia",
+		"id": "35",
+		"Physical Activity": "68.8",
+		"Meat Consumption": "56"
+	},
+	{
+		"CRC Incidents": "471.89",
+		"Fruits and Vegetables": "8.5",
+		"Country": "Slovakia",
+		"id": "36",
+		"Physical Activity": "48.1",
+		"Meat Consumption": "57"
+	},
+	{
+		"CRC Incidents": "418.86",
+		"Fruits and Vegetables": "5.3",
+		"Country": "Slovenia",
+		"id": "37",
+		"Physical Activity": "48.2",
+		"Meat Consumption": "70"
+	},
+	{
+		"CRC Incidents": "377.18",
+		"Fruits and Vegetables": "10.9",
+		"Country": "Spain",
+		"id": "38",
+		"Physical Activity": "48.3",
+		"Meat Consumption": "99"
+	},
+	{
+		"CRC Incidents": "287.37",
+		"Fruits and Vegetables": "7.6",
+		"Country": "Sweden",
+		"id": "39",
+		"Physical Activity": "23.8",
+		"Meat Consumption": "73"
+	},
+	{
+		"CRC Incidents": "219.4",
+		"Fruits and Vegetables": "2.8",
+		"Country": "Turkey",
+		"id": "45",
+		"Physical Activity": "87.7",
+		"Meat Consumption": "39"
+	},
+	{
+		"CRC Incidents": "351.39",
+		"Fruits and Vegetables": "0.0",
+		"Country": "United Kingdom",
+		"id": "42",
+		"Physical Activity": "0.0",
+		"Meat Consumption": "77"
+	}
 ]
