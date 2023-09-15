@@ -97,11 +97,11 @@ function createMapChart(selectedValue, chartData) {
                     "color": [
                         {
                             "maxvalue": "45", // Range 1: 0 to 20
-                            "code": "#ff8c8c" // Light blue
+                            "code": "#f69697" // Light blue
                         },
                         {
                             "maxvalue": "65", // Range 2: 21 to 40
-                            "code": "#ee6b6e" // Medium-light blue
+                            "code": "#f94449" // Medium-light blue
                         },
                         {
                             "maxvalue": "75", // Range 3: 41 to 60
@@ -109,7 +109,7 @@ function createMapChart(selectedValue, chartData) {
                         },
                         {
                             "maxvalue": "85", // Range 3: 41 to 60
-                            "code": "#de0a26" // Medium blue
+                            "code": "#f01e2c" // Medium blue
                         },
                         {
                             "maxvalue": "100", // Range 4: 61 to 80
