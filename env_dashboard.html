@@ -3,17 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <title>ONCO-EVIDA report</title>
+    <link rel="stylesheet" href="env_dashboard.css" />
   </head>
-  <body style="background-color: #6862ae">
+  <body style="background-color: #3787c4">
     <h1
       style="
         font-family: verdana;
-        color: #ffffff;
+        color: #fbfdff;
         text-align: center;
         font-size: 50px;
       "
     >
-      Incidents Dashboard
+      Air Pollutants
     </h1>
 
     <!-- WebDataRocks Dark Theme -->
@@ -34,29 +35,23 @@
 
     <table style="width: 100%; height: 400px">
       <tr style>
-        <td rowspan="2" , style="width: 50%; height: 400px">
-          <div id="mapContainer"></div>
-        </td>
-        <td style="width: 50%; height: 400px">
-          <div id="fusionchartContainer"></div>
-        </td>
-        <td></td>
-      </tr>
-      <tr style>
-        <td style="width: 50%; height: 400px">
-          <div id="fusionchartBar"></div>
-        </td>
-      </tr>
-      <tr style>
-        <td style="width: 50%; height: 400px">
-          <div id="fusionchartPie"></div>
-        </td>
         <td style="width: 50%; height: 400px">
           <div id="wdr-component"></div>
+        </td>
+        <td style="width: 50%; height: 400px">
+          <div id="stackContainer"></div>
+        </td>
+      </tr>
+      <tr style>
+        <td style="width: 50%; height: 400px">
+            <div id="mapContainer"></div>
+        </td>
+        <td style="width: 50%; height: 400px">
+          <div id="heatmap-container"></div>
         </td>
       </tr>
     </table>
 
-    <script src="charts.js"></script>
+    <script src="env_dashboard.js"></script>
   </body>
 </html>
