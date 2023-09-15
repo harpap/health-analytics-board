@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>ONCO-EVIDA report</title>
-    <link rel="stylesheet" href="env_dashboard.css" />
+    <!-- <link rel="stylesheet" href="beh_dashboard.css" /> -->
     <link rel="stylesheet" href="index.css" />
   </head>
   <body style="background-color: #3787c4">
@@ -15,7 +15,7 @@
         font-size: 70px;
       "
     >
-      Air Pollutants Dashboard
+      Behavioral & Lifestyle Dashboard
     </h1>
 
     <!-- WebDataRocks Dark Theme -->
@@ -36,33 +36,37 @@
 
     <header>
       <div class="dropdown">
-          <button class="dropbtn">Dashboard >></button>
-          <div class="dropdown-content">
-              <a href="https://raw.githack.com/dimosntioudis/health-analytics-board/main/index.html">CRC Incidents</a>
-              <a href="https://raw.githack.com/dimosntioudis/health-analytics-board/main/beh_dashboard.html">Behavioral</a>
-          </div>
+        <button class="dropbtn">Dashboard >></button>
+        <div class="dropdown-content">
+          <a
+            href="https://raw.githack.com/dimosntioudis/health-analytics-board/main/index.html"
+            >CRC Incidents</a
+          >
+          <a
+            href="https://raw.githack.com/dimosntioudis/health-analytics-board/main/env_dashboard.html"
+            >Environmental</a
+          >
+        </div>
       </div>
-  </header>
+    </header>
 
     <table style="width: 100%; height: 400px">
       <tr style>
+        <td rowspan="2" , style="width: 50%; height: 400px">
+          <div id="mapContainer"></div>
+        </td>
         <td style="width: 50%; height: 400px">
           <div id="wdr-component"></div>
         </td>
-        <td style="width: 50%; height: 400px">
-          <div id="stackContainer"></div>
-        </td>
+        <td></td>
       </tr>
       <tr style>
         <td style="width: 50%; height: 400px">
-            <div id="mapContainer"></div>
-        </td>
-        <td style="width: 50%; height: 400px">
-          <div id="heatmap-container"></div>
+          <div id="bubble-container"></div>
         </td>
       </tr>
     </table>
 
-    <script src="env_dashboard.js"></script>
+    <script src="beh_dashboard.js"></script>
   </body>
 </html>
