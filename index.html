@@ -34,35 +34,38 @@
     <script src="https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fusion.js"></script>
 
     <header>
-        <div class="dropdown">
-            <button class="dropbtn">Dashboard >></button>
-            <div class="dropdown-content">
-                <a href="https://raw.githack.com/dimosntioudis/health-analytics-board/main/env_dashboard.html">Environmental</a>
-            </div>
+      <div class="dropdown">
+        <button class="dropbtn">Dashboard >></button>
+        <div class="dropdown-content">
+          <a
+            href="https://raw.githack.com/dimosntioudis/health-analytics-board/main/env_dashboard.html"
+            >Environmental</a
+          >
         </div>
+      </div>
     </header>
-    
+
     <table style="width: 100%; height: 400px">
       <tr style>
         <td rowspan="2" , style="width: 50%; height: 400px">
           <div id="mapContainer"></div>
         </td>
         <td style="width: 50%; height: 400px">
-          <div id="fusionchartContainer"></div>
+          <div id="wdr-component"></div>
         </td>
         <td></td>
       </tr>
       <tr style>
         <td style="width: 50%; height: 400px">
-          <div id="fusionchartBar"></div>
+          <div id="fusionchartPie"></div>
         </td>
       </tr>
       <tr style>
         <td style="width: 50%; height: 400px">
-          <div id="fusionchartPie"></div>
+          <div id="fusionchartContainer"></div>
         </td>
         <td style="width: 50%; height: 400px">
-          <div id="wdr-component"></div>
+          <div id="fusionchartBar"></div>
         </td>
       </tr>
     </table>
