@@ -1,19 +1,19 @@
 [
   {
-    "id": 3,
+    "id": "3",
     "Country": "Austria",
-    "Fruits and Vegetables": 5.6,
-    "Physical Activity": 32.1,
-    "Meat Consumption": 87,
-    "CRC Incidents": 220.52
+    "Fruits and Vegetables": "5.6",
+    "Physical Activity": "32.1",
+    "Meat Consumption": "87",
+    "CRC Incidents": "220.52"
   },
   {
-    "id": 5,
+    "id": "5",
     "Country": "Belgium",
-    "Fruits and Vegetables": 15.1,
-    "Physical Activity": 47.3,
-    "Meat Consumption": 55,
-    "CRC Incidents": 364.92
+    "Fruits and Vegetables": "15.1",
+    "Physical Activity": "47.3",
+    "Meat Consumption": "55",
+    "CRC Incidents": "364.92"
   },
   {
     "id": 7,
