@@ -15,8 +15,17 @@
         font-size: 70px;
       "
     >
-      Behavioral & Lifestyle Dashboard
+    Lifestyle Factors and CRC Incidents
     </h1>
+    <h2      style="
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #73d2ea;
+    text-align: center;
+    font-size: 25px;
+  "
+>
+      Use Case: Exploring Lifestyle Correlations
+    </h2>
 
     <!-- WebDataRocks Dark Theme -->
     <link
@@ -35,6 +44,9 @@
     <script src="https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fusion.js"></script>
 
     <header>
+      <div class="header-left">
+        <p>Source: <a href="https://cancer-inequalities.jrc.ec.europa.eu/data-tool-by-country">European Cancer Inequalities Registry</a></p>
+      </div>
       <div class="dropdown">
         <button class="dropbtn">Dashboard >></button>
         <div class="dropdown-content">
@@ -50,9 +62,9 @@
       </div>
     </header>
 
-    <table style="width: 100%; height: 400px">
+    <table style="width: 100%; height: 800px">
       <tr style>
-        <td rowspan="2" , style="width: 50%; height: 400px">
+        <td rowspan="2" , style="width: 50%; height: 801px">
           <div id="mapContainer"></div>
         </td>
         <td style="width: 50%; height: 400px">
@@ -62,9 +74,16 @@
       </tr>
       <tr style>
         <td style="width: 50%; height: 400px">
-          <div id="bubble-container"></div>
+          <div id="bubble-container-2"></div>
         </td>
+        <td></td>
       </tr>
+      <!-- <tr style>
+        <td style="width: 50%; height: 400px">
+          <div id="bubble-container-2"></div>
+        </td>
+        <td></td>
+      </tr> -->
     </table>
 
     <script src="beh_dashboard.js"></script>

@@ -23,14 +23,14 @@ var pivot = new WebDataRocks({
                 }
             ],
             "measures": [{
-                "uniqueName": "Portions (more than 5)",
-                "formula": "sum(\"Portions (more than 5)\")",
+                "uniqueName": "Portions (1 to 4)",
+                "formula": "sum(\"Portions (1 to 4)\")",
                 "individual": true,
                 "caption": "Fruits & Vegetables"
             },
             {
-                "uniqueName": "Activity (0 minutes)",
-                "formula": "sum(\"Activity (0 minutes)\")",
+                "uniqueName": "Activity (150 to 299 minutes)",
+                "formula": "sum(\"Activity (150 to 299 minutes)\")",
                 "individual": true,
                 "caption": "Physical Activity"
             },
@@ -67,6 +67,8 @@ fetch('https://raw.githubusercontent.com/dimosntioudis/health-analytics-board/ma
         });
 
         createBubbleChart("", filteredChartData);
+        createBubble("", filteredChartData);
+        // createBubbleChart2("", filteredChartData);
     })
     .catch(error => {
         console.error('Error fetching JSON data:', error);
@@ -79,7 +81,7 @@ function createMapChart(selectedValue, chartData) {
             type: 'maps/europe',
             renderAt: 'mapContainer',
             width: '100%',
-            height: '801',
+            height: '802',
             dataFormat: 'json',
             dataSource: {
                 "chart": {
@@ -128,12 +130,85 @@ function createMapChart(selectedValue, chartData) {
     });
 }
 
+function createBubbleChart() {
+    FusionCharts.ready(function () {
+        var salesHMChart = new FusionCharts({
+            type: 'heatmap',
+            renderAt: 'heatmap-container',
+            width: '100%',
+            height: '180',
+            dataFormat: 'json',
+            dataSource: {
+                "chart": {
+                    "caption": "CRC Incidents Correlation with Risk Factors",
+                    // "subcaption": "By Urbanisation",
+                    "showplotborder": "1",
+                    "xAxisLabelsOnTop": "1",
+                    "plottooltext": "<div id='nameDiv' style='font-size: 12px; border-bottom: 1px dashed #666666; font-weight:bold; padding-bottom: 3px; margin-bottom: 5px; display: inline-block; color: #888888;' >$rowLabel :</div>{br}Rating : <b>$dataValue</b>{br}$columnLabel : <b>$tlLabel</b>{br}<b>$trLabel</b>",
+
+                    //Cosmetics
+                    "showValues": "1",
+                    "showBorder": "0",
+                    "bgColor": "#ffffff",
+                    "showShadow": "0",
+                    "usePlotGradientColor": "0",
+                    "toolTipColor": "#ffffff",
+                    "toolTipBorderThickness": "0",
+                    "toolTipBgColor": "#000000",
+                    "toolTipBgAlpha": "80",
+                    "toolTipBorderRadius": "2",
+                    "toolTipPadding": "5",
+                    "theme": "fusion"
+                },
+                "dataset": [{
+                    "data": [
+                        {
+                            "rowid": "CRC",
+                            "columnid": "Fruits & Vegetables",
+                            "value": "0.02"
+                        },
+                        {
+                            "rowid": "CRC",
+                            "columnid": "Physical Activity",
+                            "value": "0.13"
+                        },
+                        {
+                            "rowid": "CRC",
+                            "columnid": "Meat Consumption",
+                            "value": "0.05"
+                        }                        
+                    ]
+                }],
+                "colorrange": {
+                    "gradient": "0",
+                    "minvalue": "0",
+                    "code": "E24B1A",
+                    "startlabel": "Low",
+                    "endlabel": "High",
+                    "color": [{
+                        "code": "89CFF0",
+                        "minvalue": "0.00",
+                        "maxvalue": "0.10"
+                    },
+                    {
+                        "code": "0096FF",
+                        "minvalue": "0.11",
+                        "maxvalue": "0.20"
+                    }
+                    ]
+                }
+            }
+        });
+        salesHMChart.render();
+    });
+}
+
 // Function to create the map chart
-function createBubbleChart(selectedValue, filteredChartData) {
+function createBubble(selectedValue, filteredChartData) {
     FusionCharts.ready(function () {
         var conversionChart = new FusionCharts({
             type: 'bubble',
-            renderAt: 'bubble-container',
+            renderAt: 'bubble-container-2',
             width: '100%',
             height: '400',
             dataFormat: 'json',
@@ -141,13 +216,13 @@ function createBubbleChart(selectedValue, filteredChartData) {
                 "chart": {
                     "theme": "fusion",
                     "caption": "CRC Incidents Analysis",
-                    "subcaption": "Compared to Physical Activity and Fruit and Vegatable Consumption",
-                    "xAxisMinValue": "0",
+                    "subcaption": "Compared to Physical Activity and Fruit and Vegetable Consumption",
+                    "xAxisMinValue": "-5",
                     "xAxisMaxValue": "100",
                     "yAxisMinValue": "0",
-                    "yAxisMaxValue": "40",
-                    "xAxisName": "Physical Activity - No Activity (%)",
-                    "yAxisName": "Fruits & Vegetables (%)",
+                    "yAxisMaxValue": "100",
+                    "xAxisName": "Physical Activity - 150 to 299 minutes (%)",
+                    "yAxisName": "Fruits & Vegetables - 1 to 4 portions (%)",
                     "numDivlines": "2",
                     "showValues": "1",
                     "showTrendlineLabels": "0",
@@ -202,37 +277,13 @@ function createBubbleChart(selectedValue, filteredChartData) {
                     ]
                 }],
                 "dataset": [{
-                    "color": "#de0a26",
+                    "color": "#00aee4",
                     "data": [
                         {
-                            "x": "59.4",
-                            "y": "8.2",
-                            "z": "490.07",
-                            "name": "Hungary"
-                        },
-                        {
-                            "x": "51.9",
-                            "y": "8.5",
-                            "z": "471.89",
-                            "name": "Slovakia"
-                        },
-                        {
-                            "x": "85.9",
-                            "y": "8.5",
-                            "z": "427.91",
-                            "name": "Norway"
-                        },
-                        {
-                            "x": "82.5",
-                            "y": "22.9",
-                            "z": "425.67",
-                            "name": "Denmark"
-                        },
-                        {
-                            "x": "34.4",
-                            "y": "14.4",
-                            "z": "422.37",
-                            "name": "Portugal"
+                            "x": "14.7",
+                            "y": "67.5",
+                            "z": "364.92",
+                            "name": "Belgium"
                         }
                     ]
                 },
@@ -240,38 +291,333 @@ function createBubbleChart(selectedValue, filteredChartData) {
                     "color": "#00aee4",
                     "data": [
                         {
-                            "y": "5.6",
-                            "x": "67.9",
-                            "z": "220.52",
-                            "name": "Austria"
-                        },
-                        {
-                            "y": "7.9",
-                            "x": "35.5",
-                            "z": "259.86",
-                            "name": "Cyprus"
-                        },
-                        {
-                            "y": "10.9",
-                            "x": "72.5",
-                            "z": "264.93",
-                            "name": "Germany"
-                        },
-                        {
-                            "y": "11.6",
-                            "x": "28.4",
-                            "z": "267.83",
-                            "name": "Malta"
-                        },
-                        {
-                            "y": "13.6",
-                            "x": "66.6",
-                            "z": "275.23",
-                            "name": "Luxamburg"
+                            "x": "4.3",
+                            "y": "24",
+                            "z": "331.25",
+                            "name": "Romania"
                         }
                     ]
-                }],
+                },
+                {
+                    "color": "#00aee4",
+                    "data": [
+                        {
+                            "x": "25.2",
+                            "y": "62.2",
+                            "z": "427.91",
+                            "name": "Norway"
+                        }
+                    ]
+                },
+                {
+                    "color": "#FFA500",
+                    "data": [
+                        {
+                            "x": "19.2",
+                            "y": "58.7",
+                            "z": "220.52",
+                            "name": "Austria"
+                        }
+                    ]
+                }
+            ],
             }
         }).render();
     });
 }
+
+// // Function to create the map chart
+// function createBubbleChart(selectedValue, filteredChartData) {
+//     FusionCharts.ready(function () {
+//         var conversionChart = new FusionCharts({
+//             type: 'bubble',
+//             renderAt: 'bubble-container',
+//             width: '100%',
+//             height: '400',
+//             dataFormat: 'json',
+//             dataSource: {
+//                 "chart": {
+//                     "theme": "fusion",
+//                     "caption": "CRC Incidents Analysis",
+//                     "subcaption": "Compared to Physical Activity and Fruit and Vegatable Consumption",
+//                     "xAxisMinValue": "0",
+//                     "xAxisMaxValue": "100",
+//                     "yAxisMinValue": "0",
+//                     "yAxisMaxValue": "40",
+//                     "xAxisName": "Physical Activity - 150 to 299 minutes (%)",
+//                     "yAxisName": "Fruits & Vegetables - 1 to 4 portions (%)",
+//                     "numDivlines": "2",
+//                     "showValues": "1",
+//                     "showTrendlineLabels": "0",
+//                     "plotTooltext": "CRC Incidents per 100000: $zvalue%",
+//                     "drawQuadrant": "1",
+//                     "quadrantLineAlpha": "40",
+//                     "quadrantLineThickness": "0",
+//                     "quadrantXVal": "50",
+//                     "quadrantYVal": "20",
+//                     //Quadrant Labels
+//                     "quadrantLabelTL": "Low Activity / High Fruit & Veg.",
+//                     "quadrantLabelTR": "High Activity / High Fruit & Veg.",
+//                     "quadrantLabelBL": "Low Activity / Low Fruit & Veg.",
+//                     "quadrantLabelBR": "High Activity / Low Fruit & Veg.",
+//                     //Cosmetics
+//                     "yAxisLineThickness": "1",
+//                     "yAxisLineColor": "#999999",
+//                     "xAxisLineThickness": "1",
+//                     "xAxisLineColor": "#999999",
+//                     "theme": "fusion"
+
+//                 },
+//                 "categories": [{
+//                     "category": [{
+//                         "label": "0",
+//                         "x": "0"
+//                     },
+//                     {
+//                         "label": "20",
+//                         "x": "20",
+//                         "showverticalline": "1"
+//                     },
+//                     {
+//                         "label": "40",
+//                         "x": "40",
+//                         "showverticalline": "1"
+//                     },
+//                     {
+//                         "label": "60",
+//                         "x": "60",
+//                         "showverticalline": "1"
+//                     },
+//                     {
+//                         "label": "80",
+//                         "x": "80",
+//                         "showverticalline": "1"
+//                     }, {
+//                         "label": "100",
+//                         "x": "100",
+//                         "showverticalline": "1"
+//                     }
+//                     ]
+//                 }],
+//                 "dataset": [{
+//                     "color": "#FFA500",
+//                     "data": [
+//                         {
+//                             "x": "14.5",
+//                             "y": "55.5",
+//                             "z": "490.07",
+//                             "name": "Hungary"
+//                         },
+//                         {
+//                             "x": "14.5",
+//                             "y": "50.2",
+//                             "z": "471.89",
+//                             "name": "Slovakia"
+//                         },
+//                         {
+//                             "x": "25.2",
+//                             "y": "62.2",
+//                             "z": "427.91",
+//                             "name": "Norway"
+//                         },
+//                         {
+//                             "x": "24",
+//                             "y": "38.5",
+//                             "z": "425.67",
+//                             "name": "Denmark"
+//                         },
+//                         {
+//                             "x": "9.1",
+//                             "y": "58.2",
+//                             "z": "422.37",
+//                             "name": "Portugal"
+//                         }
+//                     ]
+//                 },
+//                 {
+//                     "color": "#00aee4",
+//                     "data": [
+//                         {
+//                             "x": "19.2",
+//                             "y": "58.7",
+//                             "z": "220.52",
+//                             "name": "Austria"
+//                         },
+//                         {
+//                             "x": "13.7",
+//                             "y": "58.8",
+//                             "z": "259.86",
+//                             "name": "Cyprus"
+//                         },
+//                         {
+//                             "x": "20.15",
+//                             "y": "55.9",
+//                             "z": "264.93",
+//                             "name": "Germany"
+//                         },
+//                         {
+//                             "x": "6.2",
+//                             "y": "52.1",
+//                             "z": "267.83",
+//                             "name": "Malta"
+//                         },
+//                         {
+//                             "x": "21.5",
+//                             "y": "38.3",
+//                             "z": "275.23",
+//                             "name": "Luxembourg"
+//                         }
+//                     ]
+//                 }],
+//             }
+//         }).render();
+//     });
+// }
+
+// // Function to create the map chart
+// function createBubbleChart2(selectedValue, filteredChartData) {
+//     FusionCharts.ready(function () {
+//         var conversionChart = new FusionCharts({
+//             type: 'bubble',
+//             renderAt: 'bubble-container-2',
+//             width: '100%',
+//             height: '400',
+//             dataFormat: 'json',
+//             dataSource: {
+//                 "chart": {
+//                     "theme": "fusion",
+//                     "caption": "CRC Incidents Analysis",
+//                     "subcaption": "Compared to Physical Activity and Meat Consumption",
+//                     "xAxisMinValue": "0",
+//                     "xAxisMaxValue": "100",
+//                     "yAxisMinValue": "0",
+//                     "yAxisMaxValue": "100",
+//                     "xAxisName": "Physical Activity - 150 to 299 minutes (%)",
+//                     "yAxisName": "Meat Consumption (kg)",
+//                     "numDivlines": "2",
+//                     "showValues": "1",
+//                     "showTrendlineLabels": "0",
+//                     "plotTooltext": "CRC Incidents per 100000: $zvalue%",
+//                     "drawQuadrant": "1",
+//                     "quadrantLineAlpha": "40",
+//                     "quadrantLineThickness": "0",
+//                     "quadrantXVal": "50",
+//                     "quadrantYVal": "20",
+//                     //Quadrant Labels
+//                     "quadrantLabelTL": "Low Activity / High Meat",
+//                     "quadrantLabelTR": "High Activity / High Meat",
+//                     "quadrantLabelBL": "Low Activity / Low Meat",
+//                     "quadrantLabelBR": "High Activity / Low Meat",
+//                     //Cosmetics
+//                     "yAxisLineThickness": "1",
+//                     "yAxisLineColor": "#999999",
+//                     "xAxisLineThickness": "1",
+//                     "xAxisLineColor": "#999999",
+//                     "theme": "fusion"
+
+//                 },
+//                 "categories": [{
+//                     "category": [{
+//                         "label": "0",
+//                         "x": "0"
+//                     },
+//                     {
+//                         "label": "20",
+//                         "x": "20",
+//                         "showverticalline": "1"
+//                     },
+//                     {
+//                         "label": "40",
+//                         "x": "40",
+//                         "showverticalline": "1"
+//                     },
+//                     {
+//                         "label": "60",
+//                         "x": "60",
+//                         "showverticalline": "1"
+//                     },
+//                     {
+//                         "label": "80",
+//                         "x": "80",
+//                         "showverticalline": "1"
+//                     }, {
+//                         "label": "100",
+//                         "x": "100",
+//                         "showverticalline": "1"
+//                     }
+//                     ]
+//                 }],
+//                 "dataset": [{
+//                     "color": "#FFA500",
+//                     "data": [
+//                         {
+//                             "x": "14.5",
+//                             "y": "84",
+//                             "z": "490.07",
+//                             "name": "Hungary"
+//                         },
+//                         {
+//                             "x": "14.5",
+//                             "y": "57.0",
+//                             "z": "471.89",
+//                             "name": "Slovakia"
+//                         },
+//                         {
+//                             "x": "25.2",
+//                             "y": "68.0",
+//                             "z": "427.91",
+//                             "name": "Norway"
+//                         },
+//                         {
+//                             "x": "24.0",
+//                             "y": "79.0",
+//                             "z": "425.67",
+//                             "name": "Denmark"
+//                         },
+//                         {
+//                             "x": "9.1",
+//                             "y": "95.0",
+//                             "z": "422.37",
+//                             "name": "Portugal"
+//                         }
+//                     ]
+//                 },
+//                 {
+//                     "color": "#00aee4",
+//                     "data": [
+//                         {
+//                             "x": "19.2",
+//                             "y": "87.0",
+//                             "z": "220.52",
+//                             "name": "Austria"
+//                         },
+//                         {
+//                             "x": "13.7",
+//                             "y": "77.0",
+//                             "z": "259.86",
+//                             "name": "Cyprus"
+//                         },
+//                         {
+//                             "x": "20.15",
+//                             "y": "79.0",
+//                             "z": "264.93",
+//                             "name": "Germany"
+//                         },
+//                         {
+//                             "x": "6.2",
+//                             "y": "78.0",
+//                             "z": "267.83",
+//                             "name": "Malta"
+//                         },
+//                         {
+//                             "x": "21.5",
+//                             "y": "82.0",
+//                             "z": "275.23",
+//                             "name": "Luxembourg"
+//                         }
+//                     ]
+//                 }],
+//             }
+//         }).render();
+//     });
+// }
