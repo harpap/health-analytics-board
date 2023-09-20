@@ -217,10 +217,10 @@ function createBubble(selectedValue, filteredChartData) {
             width: '100%',
             height: '400',
             dataFormat: 'json',
-            dataSource: {
+            dataSource: {               
                 "chart": {
                     "theme": "fusion",
-                    "caption": "CRC Incidents Analysis",
+                    "caption": "CRC Incidents Rate Analysis",
                     "subcaption": "Compared to Physical Activity and Fruit and Vegetable Consumption",
                     "xAxisMinValue": "-5",
                     "xAxisMaxValue": "100",
@@ -282,6 +282,7 @@ function createBubble(selectedValue, filteredChartData) {
                     ]
                 }],
                 "dataset": [{
+                    "seriesname": "High Rate",
                     "color": "#00aee4",
                     "data": [
                         {
@@ -316,6 +317,7 @@ function createBubble(selectedValue, filteredChartData) {
                 },
                 {
                     "color": "#FFA500",
+                    "seriesname": "Low Rate",
                     "data": [
                         {
                             "x": "19.2",
