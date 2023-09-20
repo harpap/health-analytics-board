@@ -85,9 +85,9 @@ function createMapChart(selectedValue, chartData) {
             dataFormat: 'json',
             dataSource: {
                 "chart": {
-                    "caption": "Annual Meat Consumptions",
-                    "subcaption": "kg per capita",
-                    "theme": "fusion",
+                    "caption": "Annual Meat Consumption in Europe",
+                    "subcaption": "in kg per capita",
+                    // "theme": "fusion",
                     "formatNumberScale": "0",
                     "showlabels": "1",
                 },
@@ -95,27 +95,27 @@ function createMapChart(selectedValue, chartData) {
                     "minvalue": "0",
                     "startlabel": "Low",
                     "endlabel": "High",
-                    "code": "#ffcbd1", // Lightest blue
+                    "code": "#ff9989", // Lightest blue
                     "color": [
                         {
                             "maxvalue": "45", // Range 1: 0 to 20
-                            "code": "#f69697" // Light blue
+                            "code": "#ff9989" // Light blue
                         },
                         {
                             "maxvalue": "65", // Range 2: 21 to 40
-                            "code": "#f94449" // Medium-light blue
+                            "code": "#ff7a66" // Medium-light blue
                         },
                         {
                             "maxvalue": "75", // Range 3: 41 to 60
-                            "code": "#ff2c2c" // Medium blue
+                            "code": "#ff5b42" // Medium blue
                         },
                         {
                             "maxvalue": "85", // Range 3: 41 to 60
-                            "code": "#f01e2c" // Medium blue
+                            "code": "#ff3d1e" // Medium blue
                         },
                         {
                             "maxvalue": "100", // Range 4: 61 to 80
-                            "code": "#c30010" // Medium-dark blue
+                            "code": "#f92200" // Medium-dark blue
                         }
                     ]
                 },
