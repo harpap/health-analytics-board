@@ -1,6 +1,6 @@
 var pivot = new WebDataRocks({
     container: "#wdr-component",
-    toolbar: true,
+    toolbar: false,
     height: 500,
     width: "100%",
     report: {
