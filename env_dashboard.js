@@ -46,12 +46,13 @@ var pivot = new WebDataRocks({
                 "individual": true,
                 "caption": "NO2 (ug/m3)"
             },
-            {
-                "uniqueName": "Population",
-                "formula": "sum(\"Population\")",
-                "individual": true,
-                "caption": "Population"
-            }]
+            // {
+            //     "uniqueName": "Population",
+            //     "formula": "sum(\"Population\")",
+            //     "individual": true,
+            //     "caption": "Population"
+            // }
+        ]
         }
     },
     reportcomplete: function () {
