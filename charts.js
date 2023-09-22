@@ -1,6 +1,6 @@
 var pivot = new WebDataRocks({
     container: "#wdr-component",
-    toolbar: false,
+    toolbar: true,
     height: 500,
     width: "100%",
     report: {
@@ -51,6 +51,7 @@ function createFusionChart() {
         chart.setJSONData(data);
         chart.setChartAttribute("theme", "fusion");
         chart.setChartAttribute("caption", "Total CRC Incidents for each Country");
+        chart.setChartAttribute("subcaption", "Per 100000 people");
         chart.render();
     });
 }
@@ -99,7 +100,8 @@ function createBarChart() {
         height: 500
     });
     pivot.fusioncharts.getData({
-        type: chart.chartType(), "slice": {
+        type: chart.chartType(),
+        "slice": {
             "rows": [
                 {
                     "uniqueName": "[Measures]"
@@ -119,15 +121,59 @@ function createBarChart() {
         }
     },
         function (data) {
+            // Modify the data to show the specific CRC rates
+            data.data[0].value = "40.450"; // CRC rate for age group 40-49
+            data.data[1].value = "267.771"; // CRC rate for age group 50-85+
+
             chart.setJSONData(data);
             chart.setChartAttribute("theme", "fusion");
-            chart.setChartAttribute("caption", "Total CRC Incidents by Age Group");
+            chart.setChartAttribute("caption", "Average CRC Incidents by Age Group");
+            chart.setChartAttribute("subcaption", "Per 100000 people");
             chart.setChartAttribute("paletteColors", "#bc5cdb, #493999, #8790a8");
             chart.render();
         }
 
     );
 }
+
+
+// function createBarChart() {
+//     var chart = new FusionCharts({
+//         type: "bar2d",
+//         renderAt: "fusionchartBar",
+//         width: "100%",
+//         height: 500
+//     });
+//     pivot.fusioncharts.getData({
+//         type: chart.chartType(), "slice": {
+//             "rows": [
+//                 {
+//                     "uniqueName": "[Measures]"
+//                 }
+//             ],
+//             "columns": [
+//                 {
+//                     "uniqueName": "Age Group"
+//                 }
+//             ],
+//             "measures": [
+//                 {
+//                     "uniqueName": "Value",
+//                     "aggregation": "sum"
+//                 }
+//             ]
+//         }
+//     },
+//         function (data) {
+//             chart.setJSONData(data);
+//             chart.setChartAttribute("theme", "fusion");
+//             chart.setChartAttribute("caption", "Total CRC Incidents by Age Group");
+//             chart.setChartAttribute("paletteColors", "#bc5cdb, #493999, #8790a8");
+//             chart.render();
+//         }
+
+//     );
+// }
 
 // Function to create the map chart
 function createMapChart() {
