@@ -1,0 +1,603 @@
+{
+	"info": {
+		"_postman_id": "fd450dce-3202-4306-a939-58ce1afc99ce",
+		"name": "ONCO-EVIDA API examples",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6912015"
+	},
+	"item": [
+		{
+			"name": "Signup",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"ntdimos2\",\r\n    \"email\": \"ntdimos2@gmail.com\",\r\n    \"password\": \"1234567\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/auth/signup",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				},
+				"description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+			},
+			"response": []
+		},
+		{
+			"name": "Signin",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"ntdimos2\",\n    \"password\": \"1234567\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/auth/signin",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				},
+				"description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
+			},
+			"response": []
+		},
+		{
+			"name": "Dataset",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful PUT request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 204]);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/datasets",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"datasets"
+					]
+				},
+				"description": "This is a PUT request and it is used to overwrite an existing piece of data. For instance, after you create an entity with a POST request, you may want to modify that later. You can do that using a PUT request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful PUT request typically returns a `200 OK`, `201 Created`, or `204 No Content` response code."
+			},
+			"response": []
+		},
+		{
+			"name": "Dataset",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful PUT request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 204]);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"name\": \"CRC Incidents per Country\",\n        \"databaseName\": \"GraphDB\",\n        \"data\": [\n            {\n                \"ISO code\": \"ALB\",\n                \"Value\": \"10.18\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"4\",\n                \"Gender\": \"Male\",\n                \"id\": \"001\",\n                \"label\": \"Albania\"\n            },\n            {\n                \"ISO code\": \"AUT\",\n                \"Value\": \"14.89\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Male\",\n                \"id\": \"003\",\n                \"label\": \"Austria\"\n            },\n            {\n                \"ISO code\": \"BEL\",\n                \"Value\": \"21.31\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Male\",\n                \"id\": \"005\",\n                \"label\": \"Belgium\"\n            },\n            {\n                \"ISO code\": \"BIH\",\n                \"Value\": \"25.02\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Male\",\n                \"id\": \"006\",\n                \"label\": \"Bosnia and Herzegovina\"\n            },\n            {\n                \"ISO code\": \"BGR\",\n                \"Value\": \"12.52\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Male\",\n                \"id\": \"007\",\n                \"label\": \"Bulgaria\"\n            },\n            {\n                \"ISO code\": \"BLR\",\n                \"Value\": \"18.89\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Male\",\n                \"id\": \"004\",\n                \"label\": \"Belarus\"\n            },\n            {\n                \"ISO code\": \"HRV\",\n                \"Value\": \"19.95\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Male\",\n                \"id\": \"008\",\n                \"label\": \"Croatia\"\n            },\n            {\n                \"ISO code\": \"CYP\",\n                \"Value\": \"20.01\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"1\",\n                \"Gender\": \"Male\",\n                \"id\": \"044\",\n                \"label\": \"Cyprus\"\n            },\n            {\n                \"ISO code\": \"DNK\",\n                \"Value\": \"18.31\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Male\",\n                \"id\": \"010\",\n                \"label\": \"Denmark\"\n            },\n            {\n                \"ISO code\": \"EST\",\n                \"Value\": \"11.44\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"6\",\n                \"Gender\": \"Male\",\n                \"id\": \"011\",\n                \"label\": \"Estonia\"\n            },\n            {\n                \"ISO code\": \"FIN\",\n                \"Value\": \"15.64\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Male\",\n                \"id\": \"012\",\n                \"label\": \"Finland\"\n            },\n            {\n                \"ISO code\": \"FRA\",\n                \"Value\": \"22.63\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Male\",\n                \"id\": \"013\",\n                \"label\": \"France\"\n            },\n            {\n                \"ISO code\": \"DEU\",\n                \"Value\": \"19.14\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"4\",\n                \"Gender\": \"Male\",\n                \"id\": \"014\",\n                \"label\": \"Germany\"\n            },\n            {\n                \"ISO code\": \"GRC\",\n                \"Value\": \"15.11\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"1\",\n                \"Gender\": \"Male\",\n                \"id\": \"015\",\n                \"label\": \"Greece\"\n            },\n            {\n                \"ISO code\": \"HUN\",\n                \"Value\": \"31.76\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"1\",\n                \"Gender\": \"Male\",\n                \"id\": \"016\",\n                \"label\": \"Hungary\"\n            },\n            {\n                \"ISO code\": \"ISL\",\n                \"Value\": \"23.1\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"1\",\n                \"Gender\": \"Male\",\n                \"id\": \"017\",\n                \"label\": \"Iceland\"\n            },\n            {\n                \"ISO code\": \"IRL\",\n                \"Value\": \"20.55\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Male\",\n                \"id\": \"018\",\n                \"label\": \"Ireland\"\n            },\n            {\n                \"ISO code\": \"ITA\",\n                \"Value\": \"20.06\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Male\",\n                \"id\": \"019\",\n                \"label\": \"Italy\"\n            },\n            {\n                \"ISO code\": \"LVA\",\n                \"Value\": \"17.35\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Male\",\n                \"id\": \"020\",\n                \"label\": \"Latvia\"\n            },\n            {\n                \"ISO code\": \"LTU\",\n                \"Value\": \"14.89\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"4\",\n                \"Gender\": \"Male\",\n                \"id\": \"022\",\n                \"label\": \"Lithuania\"\n            },\n            {\n                \"ISO code\": \"LUX\",\n                \"Value\": \"11.95\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"5\",\n                \"Gender\": \"Male\",\n                \"id\": \"023\",\n                \"label\": \"Luxembourg\"\n            },\n            {\n                \"ISO code\": \"MLT\",\n                \"Value\": \"6.88\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Male\",\n                \"id\": \"025\",\n                \"label\": \"Malta\"\n            },\n            {\n                \"ISO code\": \"MNE\",\n                \"Value\": \"12.26\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Male\",\n                \"id\": \"028\",\n                \"label\": \"Montenegro\"\n            },\n            {\n                \"ISO code\": \"NOR\",\n                \"Value\": \"23.23\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Male\",\n                \"id\": \"030\",\n                \"label\": \"Norway\"\n            },\n            {\n                \"ISO code\": \"POL\",\n                \"Value\": \"18.34\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"1\",\n                \"Gender\": \"Male\",\n                \"id\": \"031\",\n                \"label\": \"Poland\"\n            },\n            {\n                \"ISO code\": \"PRT\",\n                \"Value\": \"31.87\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"1\",\n                \"Gender\": \"Male\",\n                \"id\": \"032\",\n                \"label\": \"Portugal\"\n            },\n            {\n                \"ISO code\": \"ROU\",\n                \"Value\": \"21.16\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Male\",\n                \"id\": \"033\",\n                \"label\": \"Romania\"\n            },\n            {\n                \"ISO code\": \"SRB\",\n                \"Value\": \"29.6\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Male\",\n                \"id\": \"035\",\n                \"label\": \"Serbia\"\n            },\n            {\n                \"ISO code\": \"SVK\",\n                \"Value\": \"25.9\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"1\",\n                \"Gender\": \"Male\",\n                \"id\": \"036\",\n                \"label\": \"Slovakia\"\n            },\n            {\n                \"ISO code\": \"SVN\",\n                \"Value\": \"25.35\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"1\",\n                \"Gender\": \"Male\",\n                \"id\": \"037\",\n                \"label\": \"Slovenia\"\n            },\n            {\n                \"ISO code\": \"ESP\",\n                \"Value\": \"22.52\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"1\",\n                \"Gender\": \"Male\",\n                \"id\": \"038\",\n                \"label\": \"Spain\"\n            },\n            {\n                \"ISO code\": \"SWE\",\n                \"Value\": \"17.71\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Male\",\n                \"id\": \"039\",\n                \"label\": \"Sweden\"\n            },\n            {\n                \"ISO code\": \"CHE\",\n                \"Value\": \"16.26\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Male\",\n                \"id\": \"040\",\n                \"label\": \"Switzerland\"\n            },\n            {\n                \"ISO code\": \"TUR\",\n                \"Value\": \"20.13\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Male\",\n                \"id\": \"045\",\n                \"label\": \"Turkey\"\n            },\n            {\n                \"ISO code\": \"UKR\",\n                \"Value\": \"17.72\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Male\",\n                \"id\": \"041\",\n                \"label\": \"Ukraine\"\n            },\n            {\n                \"ISO code\": \"GBR\",\n                \"Value\": \"22.87\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"1\",\n                \"Gender\": \"Male\",\n                \"id\": \"042\",\n                \"label\": \"United Kingdom\"\n            },\n            {\n                \"ISO code\": \"ALB\",\n                \"Value\": \"6.29\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"6\",\n                \"Gender\": \"Female\",\n                \"id\": \"001\",\n                \"label\": \"Albania\"\n            },\n            {\n                \"ISO code\": \"AUT\",\n                \"Value\": \"15.63\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"4\",\n                \"Gender\": \"Female\",\n                \"id\": \"003\",\n                \"label\": \"Austria\"\n            },\n            {\n                \"ISO code\": \"BEL\",\n                \"Value\": \"20.78\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"5\",\n                \"Gender\": \"Female\",\n                \"id\": \"005\",\n                \"label\": \"Belgium\"\n            },\n            {\n                \"ISO code\": \"BIH\",\n                \"Value\": \"23.47\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Female\",\n                \"id\": \"006\",\n                \"label\": \"Bosnia and Herzegovina\"\n            },\n            {\n                \"ISO code\": \"BGR\",\n                \"Value\": \"12.62\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"7\",\n                \"Gender\": \"Female\",\n                \"id\": \"007\",\n                \"label\": \"Bulgaria\"\n            },\n            {\n                \"ISO code\": \"BLR\",\n                \"Value\": \"20.97\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"6\",\n                \"Gender\": \"Female\",\n                \"id\": \"004\",\n                \"label\": \"Belarus\"\n            },\n            {\n                \"ISO code\": \"HRV\",\n                \"Value\": \"17.56\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"6\",\n                \"Gender\": \"Female\",\n                \"id\": \"008\",\n                \"label\": \"Croatia\"\n            },\n            {\n                \"ISO code\": \"CYP\",\n                \"Value\": \"15.6\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"4\",\n                \"Gender\": \"Female\",\n                \"id\": \"044\",\n                \"label\": \"Cyprus\"\n            },\n            {\n                \"ISO code\": \"DNK\",\n                \"Value\": \"22.79\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Female\",\n                \"id\": \"010\",\n                \"label\": \"Denmark\"\n            },\n            {\n                \"ISO code\": \"EST\",\n                \"Value\": \"15.22\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"6\",\n                \"Gender\": \"Female\",\n                \"id\": \"011\",\n                \"label\": \"Estonia\"\n            },\n            {\n                \"ISO code\": \"FIN\",\n                \"Value\": \"18.84\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"4\",\n                \"Gender\": \"Female\",\n                \"id\": \"012\",\n                \"label\": \"Finland\"\n            },\n            {\n                \"ISO code\": \"FRA\",\n                \"Value\": \"24.76\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"4\",\n                \"Gender\": \"Female\",\n                \"id\": \"013\",\n                \"label\": \"France\"\n            },\n            {\n                \"ISO code\": \"DEU\",\n                \"Value\": \"20.83\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Female\",\n                \"id\": \"014\",\n                \"label\": \"Germany\"\n            },\n            {\n                \"ISO code\": \"GRC\",\n                \"Value\": \"15\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"5\",\n                \"Gender\": \"Female\",\n                \"id\": \"015\",\n                \"label\": \"Greece\"\n            },\n            {\n                \"ISO code\": \"HUN\",\n                \"Value\": \"26.55\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"4\",\n                \"Gender\": \"Female\",\n                \"id\": \"016\",\n                \"label\": \"Hungary\"\n            },\n            {\n                \"ISO code\": \"ISL\",\n                \"Value\": \"14.2\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"5\",\n                \"Gender\": \"Female\",\n                \"id\": \"017\",\n                \"label\": \"Iceland\"\n            },\n            {\n                \"ISO code\": \"IRL\",\n                \"Value\": \"20.36\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"5\",\n                \"Gender\": \"Female\",\n                \"id\": \"018\",\n                \"label\": \"Ireland\"\n            },\n            {\n                \"ISO code\": \"ITA\",\n                \"Value\": \"22.6\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"4\",\n                \"Gender\": \"Female\",\n                \"id\": \"019\",\n                \"label\": \"Italy\"\n            },\n            {\n                \"ISO code\": \"LVA\",\n                \"Value\": \"22.69\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"5\",\n                \"Gender\": \"Female\",\n                \"id\": \"020\",\n                \"label\": \"Latvia\"\n            },\n            {\n                \"ISO code\": \"LTU\",\n                \"Value\": \"16.37\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"7\",\n                \"Gender\": \"Female\",\n                \"id\": \"022\",\n                \"label\": \"Lithuania\"\n            },\n            {\n                \"ISO code\": \"LUX\",\n                \"Value\": \"15.48\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"5\",\n                \"Gender\": \"Female\",\n                \"id\": \"023\",\n                \"label\": \"Luxembourg\"\n            },\n            {\n                \"ISO code\": \"MLT\",\n                \"Value\": \"14.21\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Female\",\n                \"id\": \"025\",\n                \"label\": \"Malta\"\n            },\n            {\n                \"ISO code\": \"MNE\",\n                \"Value\": \"16.38\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"6\",\n                \"Gender\": \"Female\",\n                \"id\": \"028\",\n                \"label\": \"Montenegro\"\n            },\n            {\n                \"ISO code\": \"NOR\",\n                \"Value\": \"27.38\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"4\",\n                \"Gender\": \"Female\",\n                \"id\": \"030\",\n                \"label\": \"Norway\"\n            },\n            {\n                \"ISO code\": \"POL\",\n                \"Value\": \"14.51\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"6\",\n                \"Gender\": \"Female\",\n                \"id\": \"031\",\n                \"label\": \"Poland\"\n            },\n            {\n                \"ISO code\": \"PRT\",\n                \"Value\": \"22.83\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"4\",\n                \"Gender\": \"Female\",\n                \"id\": \"032\",\n                \"label\": \"Portugal\"\n            },\n            {\n                \"ISO code\": \"ROU\",\n                \"Value\": \"17.62\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"5\",\n                \"Gender\": \"Female\",\n                \"id\": \"033\",\n                \"label\": \"Romania\"\n            },\n            {\n                \"ISO code\": \"SRB\",\n                \"Value\": \"23.03\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"4\",\n                \"Gender\": \"Female\",\n                \"id\": \"035\",\n                \"label\": \"Serbia\"\n            },\n            {\n                \"ISO code\": \"SVK\",\n                \"Value\": \"24.41\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Female\",\n                \"id\": \"036\",\n                \"label\": \"Slovakia\"\n            },\n            {\n                \"ISO code\": \"SVN\",\n                \"Value\": \"15.44\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"7\",\n                \"Gender\": \"Female\",\n                \"id\": \"037\",\n                \"label\": \"Slovenia\"\n            },\n            {\n                \"ISO code\": \"ESP\",\n                \"Value\": \"21.35\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Female\",\n                \"id\": \"038\",\n                \"label\": \"Spain\"\n            },\n            {\n                \"ISO code\": \"SWE\",\n                \"Value\": \"17.63\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"4\",\n                \"Gender\": \"Female\",\n                \"id\": \"039\",\n                \"label\": \"Sweden\"\n            },\n            {\n                \"ISO code\": \"CHE\",\n                \"Value\": \"17.84\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"4\",\n                \"Gender\": \"Female\",\n                \"id\": \"040\",\n                \"label\": \"Switzerland\"\n            },\n            {\n                \"ISO code\": \"TUR\",\n                \"Value\": \"16.28\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"4\",\n                \"Gender\": \"Female\",\n                \"id\": \"045\",\n                \"label\": \"Turkey\"\n            },\n            {\n                \"ISO code\": \"UKR\",\n                \"Value\": \"14.81\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"6\",\n                \"Gender\": \"Female\",\n                \"id\": \"041\",\n                \"label\": \"Ukraine\"\n            },\n            {\n                \"ISO code\": \"GBR\",\n                \"Value\": \"22.08\",\n                \"Age Group\": \"40-49\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Female\",\n                \"id\": \"042\",\n                \"label\": \"United Kingdom\"\n            },\n            {\n                \"ISO code\": \"ALB\",\n                \"Value\": \"36.3\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"5\",\n                \"Gender\": \"Male\",\n                \"id\": \"001\",\n                \"label\": \"Albania\"\n            },\n            {\n                \"ISO code\": \"AUT\",\n                \"Value\": \"121.22\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Male\",\n                \"id\": \"003\",\n                \"label\": \"Austria\"\n            },\n            {\n                \"ISO code\": \"BEL\",\n                \"Value\": \"200.4\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Male\",\n                \"id\": \"005\",\n                \"label\": \"Belgium\"\n            },\n            {\n                \"ISO code\": \"BIH\",\n                \"Value\": \"154.36\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Male\",\n                \"id\": \"006\",\n                \"label\": \"Bosnia and Herzegovina\"\n            },\n            {\n                \"ISO code\": \"BGR\",\n                \"Value\": \"172.97\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Male\",\n                \"id\": \"007\",\n                \"label\": \"Bulgaria\"\n            },\n            {\n                \"ISO code\": \"BLR\",\n                \"Value\": \"183.36\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Male\",\n                \"id\": \"004\",\n                \"label\": \"Belarus\"\n            },\n            {\n                \"ISO code\": \"HRV\",\n                \"Value\": \"239.53\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Male\",\n                \"id\": \"008\",\n                \"label\": \"Croatia\"\n            },\n            {\n                \"ISO code\": \"CYP\",\n                \"Value\": \"163.93\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Male\",\n                \"id\": \"044\",\n                \"label\": \"Cyprus\"\n            },\n            {\n                \"ISO code\": \"DNK\",\n                \"Value\": \"223.07\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Male\",\n                \"id\": \"010\",\n                \"label\": \"Denmark\"\n            },\n            {\n                \"ISO code\": \"EST\",\n                \"Value\": \"169.57\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Male\",\n                \"id\": \"011\",\n                \"label\": \"Estonia\"\n            },\n            {\n                \"ISO code\": \"FIN\",\n                \"Value\": \"134.17\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Male\",\n                \"id\": \"012\",\n                \"label\": \"Finland\"\n            },\n            {\n                \"ISO code\": \"FRA\",\n                \"Value\": \"165.13\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Male\",\n                \"id\": \"013\",\n                \"label\": \"France\"\n            },\n            {\n                \"ISO code\": \"DEU\",\n                \"Value\": \"135.39\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Male\",\n                \"id\": \"014\",\n                \"label\": \"Germany\"\n            },\n            {\n                \"ISO code\": \"GRC\",\n                \"Value\": \"161.05\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"4\",\n                \"Gender\": \"Male\",\n                \"id\": \"015\",\n                \"label\": \"Greece\"\n            },\n            {\n                \"ISO code\": \"HUN\",\n                \"Value\": \"287.18\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Male\",\n                \"id\": \"016\",\n                \"label\": \"Hungary\"\n            },\n            {\n                \"ISO code\": \"ISL\",\n                \"Value\": \"150.33\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Male\",\n                \"id\": \"017\",\n                \"label\": \"Iceland\"\n            },\n            {\n                \"ISO code\": \"IRL\",\n                \"Value\": \"197.3\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Male\",\n                \"id\": \"018\",\n                \"label\": \"Ireland\"\n            },\n            {\n                \"ISO code\": \"ITA\",\n                \"Value\": \"157.91\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Male\",\n                \"id\": \"019\",\n                \"label\": \"Italy\"\n            },\n            {\n                \"ISO code\": \"LVA\",\n                \"Value\": \"230.75\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Male\",\n                \"id\": \"020\",\n                \"label\": \"Latvia\"\n            },\n            {\n                \"ISO code\": \"LTU\",\n                \"Value\": \"171.13\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Male\",\n                \"id\": \"022\",\n                \"label\": \"Lithuania\"\n            },\n            {\n                \"ISO code\": \"LUX\",\n                \"Value\": \"141.13\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Male\",\n                \"id\": \"023\",\n                \"label\": \"Luxembourg\"\n            },\n            {\n                \"ISO code\": \"MLT\",\n                \"Value\": \"151.13\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Male\",\n                \"id\": \"025\",\n                \"label\": \"Malta\"\n            },\n            {\n                \"ISO code\": \"MNE\",\n                \"Value\": \"168.41\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Male\",\n                \"id\": \"028\",\n                \"label\": \"Montenegro\"\n            },\n            {\n                \"ISO code\": \"NOR\",\n                \"Value\": \"208.1\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Male\",\n                \"id\": \"030\",\n                \"label\": \"Norway\"\n            },\n            {\n                \"ISO code\": \"POL\",\n                \"Value\": \"194.78\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Male\",\n                \"id\": \"031\",\n                \"label\": \"Poland\"\n            },\n            {\n                \"ISO code\": \"PRT\",\n                \"Value\": \"253.02\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Male\",\n                \"id\": \"032\",\n                \"label\": \"Portugal\"\n            },\n            {\n                \"ISO code\": \"ROU\",\n                \"Value\": \"194.23\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Male\",\n                \"id\": \"033\",\n                \"label\": \"Romania\"\n            },\n            {\n                \"ISO code\": \"SRB\",\n                \"Value\": \"210.79\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Male\",\n                \"id\": \"035\",\n                \"label\": \"Serbia\"\n            },\n            {\n                \"ISO code\": \"SVK\",\n                \"Value\": \"283.94\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"1\",\n                \"Gender\": \"Male\",\n                \"id\": \"036\",\n                \"label\": \"Slovakia\"\n            },\n            {\n                \"ISO code\": \"SVN\",\n                \"Value\": \"261.54\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Male\",\n                \"id\": \"037\",\n                \"label\": \"Slovenia\"\n            },\n            {\n                \"ISO code\": \"ESP\",\n                \"Value\": \"221.68\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Male\",\n                \"id\": \"038\",\n                \"label\": \"Spain\"\n            },\n            {\n                \"ISO code\": \"SWE\",\n                \"Value\": \"139.52\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Male\",\n                \"id\": \"039\",\n                \"label\": \"Sweden\"\n            },\n            {\n                \"ISO code\": \"CHE\",\n                \"Value\": \"115.34\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Male\",\n                \"id\": \"040\",\n                \"label\": \"Switzerland\"\n            },\n            {\n                \"ISO code\": \"TUR\",\n                \"Value\": \"115.34\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Male\",\n                \"id\": \"045\",\n                \"label\": \"Turkey\"\n            },\n            {\n                \"ISO code\": \"UKR\",\n                \"Value\": \"155.24\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Male\",\n                \"id\": \"041\",\n                \"label\": \"Ukraine\"\n            },\n            {\n                \"ISO code\": \"GBR\",\n                \"Value\": \"181.28\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Male\",\n                \"id\": \"042\",\n                \"label\": \"United Kingdom\"\n            },\n            {\n                \"ISO code\": \"ALB\",\n                \"Value\": \"28.89\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Female\",\n                \"id\": \"001\",\n                \"label\": \"Albania\"\n            },\n            {\n                \"ISO code\": \"AUT\",\n                \"Value\": \"68.78\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Female\",\n                \"id\": \"003\",\n                \"label\": \"Austria\"\n            },\n            {\n                \"ISO code\": \"BEL\",\n                \"Value\": \"122.43\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Female\",\n                \"id\": \"005\",\n                \"label\": \"Belgium\"\n            },\n            {\n                \"ISO code\": \"BIH\",\n                \"Value\": \"85.72\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Female\",\n                \"id\": \"006\",\n                \"label\": \"Bosnia and Herzegovina\"\n            },\n            {\n                \"ISO code\": \"BGR\",\n                \"Value\": \"91.83\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Female\",\n                \"id\": \"007\",\n                \"label\": \"Bulgaria\"\n            },\n            {\n                \"ISO code\": \"BLR\",\n                \"Value\": \"108.65\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Female\",\n                \"id\": \"004\",\n                \"label\": \"Belarus\"\n            },\n            {\n                \"ISO code\": \"HRV\",\n                \"Value\": \"110.53\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Female\",\n                \"id\": \"008\",\n                \"label\": \"Croatia\"\n            },\n            {\n                \"ISO code\": \"CYP\",\n                \"Value\": \"60.32\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Female\",\n                \"id\": \"044\",\n                \"label\": \"Cyprus\"\n            },\n            {\n                \"ISO code\": \"DNK\",\n                \"Value\": \"161.5\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Female\",\n                \"id\": \"010\",\n                \"label\": \"Denmark\"\n            },\n            {\n                \"ISO code\": \"EST\",\n                \"Value\": \"109.17\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Female\",\n                \"id\": \"011\",\n                \"label\": \"Estonia\"\n            },\n            {\n                \"ISO code\": \"FIN\",\n                \"Value\": \"98.48\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Female\",\n                \"id\": \"012\",\n                \"label\": \"Finland\"\n            },\n            {\n                \"ISO code\": \"FRA\",\n                \"Value\": \"104.55\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Female\",\n                \"id\": \"013\",\n                \"label\": \"France\"\n            },\n            {\n                \"ISO code\": \"DEU\",\n                \"Value\": \"89.57\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Female\",\n                \"id\": \"014\",\n                \"label\": \"Germany\"\n            },\n            {\n                \"ISO code\": \"GRC\",\n                \"Value\": \"91.78\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Female\",\n                \"id\": \"015\",\n                \"label\": \"Greece\"\n            },\n            {\n                \"ISO code\": \"HUN\",\n                \"Value\": \"144.58\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Female\",\n                \"id\": \"016\",\n                \"label\": \"Hungary\"\n            },\n            {\n                \"ISO code\": \"ISL\",\n                \"Value\": \"112.93\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Female\",\n                \"id\": \"017\",\n                \"label\": \"Iceland\"\n            },\n            {\n                \"ISO code\": \"IRL\",\n                \"Value\": \"124.15\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Female\",\n                \"id\": \"018\",\n                \"label\": \"Ireland\"\n            },\n            {\n                \"ISO code\": \"ITA\",\n                \"Value\": \"109.92\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Female\",\n                \"id\": \"019\",\n                \"label\": \"Italy\"\n            },\n            {\n                \"ISO code\": \"LVA\",\n                \"Value\": \"135.37\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Female\",\n                \"id\": \"020\",\n                \"label\": \"Latvia\"\n            },\n            {\n                \"ISO code\": \"LTU\",\n                \"Value\": \"99.25\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Female\",\n                \"id\": \"022\",\n                \"label\": \"Lithuania\"\n            },\n            {\n                \"ISO code\": \"LUX\",\n                \"Value\": \"106.67\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Female\",\n                \"id\": \"023\",\n                \"label\": \"Luxembourg\"\n            },\n            {\n                \"ISO code\": \"MLT\",\n                \"Value\": \"95.61\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Female\",\n                \"id\": \"025\",\n                \"label\": \"Malta\"\n            },\n            {\n                \"ISO code\": \"MNE\",\n                \"Value\": \"95.5\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Female\",\n                \"id\": \"028\",\n                \"label\": \"Montenegro\"\n            },\n            {\n                \"ISO code\": \"NOR\",\n                \"Value\": \"169.2\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Female\",\n                \"id\": \"030\",\n                \"label\": \"Norway\"\n            },\n            {\n                \"ISO code\": \"POL\",\n                \"Value\": \"98.79\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"4\",\n                \"Gender\": \"Female\",\n                \"id\": \"031\",\n                \"label\": \"Poland\"\n            },\n            {\n                \"ISO code\": \"PRT\",\n                \"Value\": \"114.65\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Female\",\n                \"id\": \"032\",\n                \"label\": \"Portugal\"\n            },\n            {\n                \"ISO code\": \"ROU\",\n                \"Value\": \"98.24\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Female\",\n                \"id\": \"033\",\n                \"label\": \"Romania\"\n            },\n            {\n                \"ISO code\": \"SRB\",\n                \"Value\": \"96.69\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Female\",\n                \"id\": \"035\",\n                \"label\": \"Serbia\"\n            },\n            {\n                \"ISO code\": \"SVK\",\n                \"Value\": \"137.64\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Female\",\n                \"id\": \"036\",\n                \"label\": \"Slovakia\"\n            },\n            {\n                \"ISO code\": \"SVN\",\n                \"Value\": \"116.53\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Female\",\n                \"id\": \"037\",\n                \"label\": \"Slovenia\"\n            },\n            {\n                \"ISO code\": \"ESP\",\n                \"Value\": \"111.63\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Female\",\n                \"id\": \"038\",\n                \"label\": \"Spain\"\n            },\n            {\n                \"ISO code\": \"SWE\",\n                \"Value\": \"112.51\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Female\",\n                \"id\": \"039\",\n                \"label\": \"Sweden\"\n            },\n            {\n                \"ISO code\": \"CHE\",\n                \"Value\": \"82.14\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Female\",\n                \"id\": \"040\",\n                \"label\": \"Switzerland\"\n            },\n            {\n                \"ISO code\": \"TUR\",\n                \"Value\": \"67.65\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Female\",\n                \"id\": \"045\",\n                \"label\": \"Turkey\"\n            },\n            {\n                \"ISO code\": \"UKR\",\n                \"Value\": \"91.4\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"2\",\n                \"Gender\": \"Female\",\n                \"id\": \"041\",\n                \"label\": \"Ukraine\"\n            },\n            {\n                \"ISO code\": \"GBR\",\n                \"Value\": \"125.16\",\n                \"Age Group\": \"50-85+\",\n                \"Rank\": \"3\",\n                \"Gender\": \"Female\",\n                \"id\": \"042\",\n                \"label\": \"United Kingdom\"\n            }\n        ]\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/datasets",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"datasets"
+					]
+				},
+				"description": "This is a PUT request and it is used to overwrite an existing piece of data. For instance, after you create an entity with a POST request, you may want to modify that later. You can do that using a PUT request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful PUT request typically returns a `200 OK`, `201 Created`, or `204 No Content` response code."
+			},
+			"response": []
+		},
+		{
+			"name": "Table",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful PUT request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 204]);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/tables",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"tables"
+					]
+				},
+				"description": "This is a PUT request and it is used to overwrite an existing piece of data. For instance, after you create an entity with a POST request, you may want to modify that later. You can do that using a PUT request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful PUT request typically returns a `200 OK`, `201 Created`, or `204 No Content` response code."
+			},
+			"response": []
+		},
+		{
+			"name": "Table",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful PUT request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 204]);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Example Table\",\n    \"datasetId\": \"655227a9f9f86063e82f5019\",\n    \"selectedColumns\": [\"label\", \"ISO code\", \"Gender\", \"Age Group\", \"Value\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/tables",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"tables"
+					]
+				},
+				"description": "This is a PUT request and it is used to overwrite an existing piece of data. For instance, after you create an entity with a POST request, you may want to modify that later. You can do that using a PUT request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful PUT request typically returns a `200 OK`, `201 Created`, or `204 No Content` response code."
+			},
+			"response": []
+		},
+		{
+			"name": "Pivot",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful PUT request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 204]);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/pivots",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pivots"
+					]
+				},
+				"description": "This is a PUT request and it is used to overwrite an existing piece of data. For instance, after you create an entity with a POST request, you may want to modify that later. You can do that using a PUT request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful PUT request typically returns a `200 OK`, `201 Created`, or `204 No Content` response code."
+			},
+			"response": []
+		},
+		{
+			"name": "Pivot",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful PUT request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 204]);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Pivot Example\",\r\n    \"tableId\": \"655de355d7ff7d71d75beb6f\",\r\n    \"config\": {\r\n        \"toolbar\": true,\r\n        \"height\": \"380\",\r\n        \"width\": \"100%\",\r\n        \"report\": {\r\n            \"slice\": {\r\n                \"rows\": [\r\n                    {\r\n                        \"uniqueName\": \"label\"\r\n                    }\r\n                ],\r\n                \"columns\": [\r\n                    {\r\n                        \"uniqueName\": \"Age Group\"\r\n                    },\r\n                    {\r\n                        \"uniqueName\": \"Gender\"\r\n                    }\r\n                ],\r\n                \"measures\": [\r\n                    {\r\n                        \"uniqueName\": \"Value\"\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/pivots",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pivots"
+					]
+				},
+				"description": "This is a PUT request and it is used to overwrite an existing piece of data. For instance, after you create an entity with a POST request, you may want to modify that later. You can do that using a PUT request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful PUT request typically returns a `200 OK`, `201 Created`, or `204 No Content` response code."
+			},
+			"response": []
+		},
+		{
+			"name": "Chart",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful PUT request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 204]);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/charts",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"charts"
+					]
+				},
+				"description": "This is a PUT request and it is used to overwrite an existing piece of data. For instance, after you create an entity with a POST request, you may want to modify that later. You can do that using a PUT request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful PUT request typically returns a `200 OK`, `201 Created`, or `204 No Content` response code."
+			},
+			"response": []
+		},
+		{
+			"name": "Chart",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful PUT request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 204]);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pivotId\": \"655de829d7ff7d71d75beb72\",\r\n    \"name\": \"Chart1\",\r\n    \"type\": \"area2d\",\r\n    \"renderAt\": \"fusionchartContainer\",\r\n    \"width\": \"100%\",\r\n    \"height\": \"350\",\r\n    \"chartConfig\" : {\r\n        \"caption\": \"Test\",\r\n        \"subcaption\": \"test\",\r\n        \"theme\": \"fusion\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/charts",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"charts"
+					]
+				},
+				"description": "This is a PUT request and it is used to overwrite an existing piece of data. For instance, after you create an entity with a POST request, you may want to modify that later. You can do that using a PUT request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful PUT request typically returns a `200 OK`, `201 Created`, or `204 No Content` response code."
+			},
+			"response": []
+		},
+		{
+			"name": "Dashboard",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful PUT request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 204]);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pivotId\": \"655de829d7ff7d71d75beb72\",\r\n    \"name\": \"Chart1\",\r\n    \"type\": \"area2d\",\r\n    \"renderAt\": \"fusionchartContainer\",\r\n    \"width\": \"100%\",\r\n    \"height\": \"350\",\r\n    \"chartConfig\" : {\r\n        \"caption\": \"Test\",\r\n        \"subcaption\": \"test\",\r\n        \"theme\": \"fusion\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/dashboards",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"dashboards"
+					]
+				},
+				"description": "This is a PUT request and it is used to overwrite an existing piece of data. For instance, after you create an entity with a POST request, you may want to modify that later. You can do that using a PUT request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful PUT request typically returns a `200 OK`, `201 Created`, or `204 No Content` response code."
+			},
+			"response": []
+		},
+		{
+			"name": "Dashboard",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful PUT request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 204]);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Dashboard Example\",\r\n    \"chartIds\": [\"655dea7abe3edf52ccc17dd9\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/dashboards",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"dashboards"
+					]
+				},
+				"description": "This is a PUT request and it is used to overwrite an existing piece of data. For instance, after you create an entity with a POST request, you may want to modify that later. You can do that using a PUT request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful PUT request typically returns a `200 OK`, `201 Created`, or `204 No Content` response code."
+			},
+			"response": []
+		},
+		{
+			"name": "Dashboard",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful PUT request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 204]);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Dashboard Example\",\r\n    \"chartIds\": [\r\n        \"655dea7abe3edf52ccc17dd9\",\r\n        \"65659c51853cb67f2f4690cf\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/dashboards/6567156266b1b5795d8045fa",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"dashboards",
+						"6567156266b1b5795d8045fa"
+					]
+				},
+				"description": "This is a PUT request and it is used to overwrite an existing piece of data. For instance, after you create an entity with a POST request, you may want to modify that later. You can do that using a PUT request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful PUT request typically returns a `200 OK`, `201 Created`, or `204 No Content` response code."
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "id",
+			"value": "1"
+		},
+		{
+			"key": "base_url",
+			"value": "http://91.184.203.22:8082"
+		}
+	]
+}
