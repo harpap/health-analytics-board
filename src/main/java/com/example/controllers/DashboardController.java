@@ -2,6 +2,7 @@ package com.example.controllers;
 
 import com.example.exception.ResourceNotFoundException;
 import com.example.exception.ResourceOwnershipException;
+import com.example.models.Chart;
 import com.example.models.Dashboard;
 import com.example.models.Table;
 import com.example.repository.DashboardRepository;
@@ -36,17 +37,18 @@ public class DashboardController {
   public ResponseEntity<List<Dashboard>> getAllDashboards(
       @RequestParam(required = false) String name) {
 
+    String userId = dashboardService.findLoggedInUser();
     try {
       List<Dashboard> dashboards = new ArrayList<>();
 
       if (name == null) {
-        Iterable<Dashboard> iterable = dashboardRepository.findAll();
+        Iterable<Dashboard> iterable = dashboardRepository.findByUserId(userId);
 
         for (Dashboard dashboard : iterable) {
           dashboards.add(dashboard);
         }
       } else {
-        Iterable<Dashboard> iterable = dashboardRepository.findByNameContaining(name);
+        Iterable<Dashboard> iterable = dashboardRepository.findByUserIdAndNameContaining(userId, name);;
 
         for (Dashboard dashboard : iterable) {
           dashboards.add(dashboard);
@@ -65,10 +67,17 @@ public class DashboardController {
 
   @GetMapping("/dashboards/{id}")
   public ResponseEntity<Dashboard> getDatasetById(@PathVariable("id") String id) {
-    Dashboard dashboardData = dashboardRepository.findById(id)
+    String userId = dashboardService.findLoggedInUser();
+
+    Dashboard _dashboard = dashboardRepository.findById(id)
         .orElseThrow(() -> new ResourceNotFoundException("Not found Dashboard with id = " + id));
 
-    return new ResponseEntity<>(dashboardData, HttpStatus.OK);
+    if (!_dashboard.getUserId().contentEquals(userId)) {
+      throw new ResourceOwnershipException(
+          "You do not have permission to access Chart with id = " + id);
+    }
+
+    return new ResponseEntity<>(_dashboard, HttpStatus.OK);
   }
 
   @PostMapping("/dashboards")
