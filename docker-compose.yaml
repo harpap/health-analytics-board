@@ -1,0 +1,10 @@
+version: "3"
+services:
+
+   certh_mongo_container:
+      build: ./mongo-service
+      container_name: certh_mongo_container
+      ports:
+         - 27017:27017
+      volumes: 
+         - data-vol:./shared/mongo:/data/db
