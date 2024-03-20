@@ -1,8 +1,10 @@
 #!/bin/bash
-sudo docker compose stop
+docker compose stop 
 
-pushd springboot-service
-./mvnw clean package || exit
+pushd springboot-service 
+#./mvnw clean package || exit
 
 popd
-sudo docker compose up --build -d
+docker compose up --build -d
+
+mongoimport --db analytics-dashboard --collection roles --file ./springboot-service/analytics-dashboard.roles.json --jsonArray --drop
