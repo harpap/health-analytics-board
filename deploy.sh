@@ -2,7 +2,7 @@
 docker compose stop 
 
 pushd springboot-service 
-#./mvnw clean package || exit
+mvn clean install
 
 popd
 docker compose up --build -d

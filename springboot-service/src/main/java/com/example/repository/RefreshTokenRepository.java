@@ -5,7 +5,7 @@ import com.example.models.User;
 import java.util.Optional;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-public interface RefreshTokenRepository extends MongoRepository<RefreshToken, Long> {
+public interface RefreshTokenRepository extends MongoRepository<RefreshToken, String> {
   Optional<RefreshToken> findByToken(String token);
 
   int deleteByUser(User user);

@@ -6,6 +6,8 @@ services:
       container_name: certh_mongo_container
       ports:
          - 27017:27017
+      networks:
+         - evidanet
       volumes:
          - ./shared/mongo:/docker-entrypoint-initdb.d
          - ./shared/mongo:/data/db
@@ -14,10 +16,16 @@ services:
       build: ./springboot-service
       container_name: certh_springboot_container
       ports:
-         - 8080:8080
+         - 8082:8080
+      networks:
+         - evidanet
       links: 
          - certh_mongo_container
       volumes: 
          - ./shared/spring-logs:/tomcat/logs
       depends_on:
       - certh_mongo_container
+
+networks:
+ evidanet:
+   driver: bridge
