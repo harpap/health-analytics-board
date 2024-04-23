@@ -23,7 +23,6 @@ services:
          - certh_mongo_container
       volumes: 
          - ./shared/spring-logs:/tomcat/logs
-         - ./:/springboot-service
       depends_on:
          - certh_mongo_container
 
