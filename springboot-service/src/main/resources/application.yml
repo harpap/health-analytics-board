@@ -8,7 +8,20 @@ spring:
   kafka:
     consumer:
       group-id: "default"
-
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      properties:
+        ssl.endpoint.identification.algorithm: null
+    security:
+      protocol: "SSL"
+    bootstrap-servers: kafka.oncoscreen.exus.ai:29093
+    ssl:
+      trust-store-location: file:ssl/kafka.truststore.jks
+      trust-store-password: exusailabs
+      key-store-location: file:ssl/kafka.keystore.certh.jks
+      key-store-password: exusailabs
+      key-password: exusailabs
   h2:
     console:
       enabled: true
