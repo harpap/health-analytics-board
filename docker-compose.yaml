@@ -26,22 +26,6 @@ services:
       depends_on:
          - certh_mongo_container
 
-   kafdrop:
-      image: obsidiandynamics/kafdrop
-      container_name: kafdrop
-      restart: "no"
-      networks:
-         - kafka-net
-      ports:
-         - "9000:9000"
-      environment:
-         KAFKA_BROKERCONNECT: kafka.oncoscreen.exus.ai:29093
-      depends_on:
-         - certh_springboot_container
-
 networks:
  evidanet:
-   driver: bridge
- kafka-net:
-   name: kafka-net
    driver: bridge
