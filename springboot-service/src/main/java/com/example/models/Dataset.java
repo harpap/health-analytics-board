@@ -14,26 +14,26 @@ public class Dataset {
   private String databaseName;
   private List<Map<String, Object>> data;
 
-  private List<String> measures;
+  private List<String> elements;
 
   public Dataset() {
 
   }
 
   public Dataset(String name, String databaseName,
-      List<Map<String, Object>> data, List<String> measures) {
+      List<Map<String, Object>> data, List<String> elements) {
     this.name = name;
     this.databaseName = databaseName;
     this.data = data;
-    this.measures = measures;
+    this.elements = elements;
   }
 
-  public List<String> getMeasures() {
-    return measures;
+  public List<String> getElements() {
+    return elements;
   }
 
-  public void setMeasures(List<String> measures) {
-    this.measures = measures;
+  public void setElements(List<String> elements) {
+    this.elements = elements;
   }
 
   public List<Map<String, Object>> getData() {
