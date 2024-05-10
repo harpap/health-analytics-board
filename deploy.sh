@@ -23,3 +23,5 @@ docker compose up --build
 # mongoimport --db analytics-dashboard --collection datasets --file "Data/CRC Incidence Rates/eu_crc_incidents.json" --jsonArray
 # mongoimport --db analytics-dashboard --collection datasets --file "Data/CRC Incidence Rates/global_crc_incidents.json" --jsonArray
 # mongoimport --db analytics-dashboard --collection datasets --file "Data/CRC Incidence Rates/list_of_eu_countries.json" --jsonArray
+
+# mongoimport --db analytics-dashboard --collection datasets --file "/home/certh/mongofiles/datasets.json" --jsonArray --drop

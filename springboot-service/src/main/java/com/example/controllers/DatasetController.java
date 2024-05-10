@@ -80,8 +80,9 @@ public class DatasetController {
     Dataset _dataset = datasetRepository.findById(id)
         .orElseThrow(() -> new ResourceNotFoundException("Not found Dataset with id = " + id));
 
-    _dataset.setName(dataset.getName());
+    _dataset.setCategory(dataset.getCategory());
     _dataset.setDatabaseName(dataset.getDatabaseName());
+    _dataset.setDatasetName(dataset.getDatasetName());
     _dataset.setData(dataset.getData());
 
     return new ResponseEntity<>(datasetRepository.save(_dataset), HttpStatus.OK);

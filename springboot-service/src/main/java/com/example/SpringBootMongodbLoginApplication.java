@@ -38,7 +38,7 @@ public class SpringBootMongodbLoginApplication {
 		FileCopyUtils.copy(keystoreInputStream, new FileOutputStream("ssl/kafka.keystore.certh.jks"));
 	
 		SpringApplication.run(SpringBootMongodbLoginApplication.class, args);
-		logger.info("Running...");
+		logger.info("Running....");
 		System.out.println("lllllllllllllllllll");
 	}
 

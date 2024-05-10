@@ -4,14 +4,18 @@ import java.util.List;
 import java.util.Map;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Document(collection = "datasets")
 public class Dataset {
+  private static final Logger logger = LoggerFactory.getLogger(Dataset.class);
   @Id
   private String id;
-
   private String name;
+  private String category;
   private String databaseName;
+  private String datasetName;
   private List<Map<String, Object>> data;
 
   private List<String> elements;
@@ -20,10 +24,12 @@ public class Dataset {
 
   }
 
-  public Dataset(String name, String databaseName,
+  public Dataset(String name, String category, String databaseName, String datasetName,
       List<Map<String, Object>> data, List<String> elements) {
-    this.name = name;
+    this.name = datasetName;
+    this.category = category;
     this.databaseName = databaseName;
+    this.datasetName = datasetName;
     this.data = data;
     this.elements = elements;
   }
@@ -52,12 +58,12 @@ public class Dataset {
     this.id = id;
   }
 
-  public String getName() {
-    return name;
+  public String getCategory() {
+    return category;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setCategory(String category) {
+    this.category = category;
   }
 
   public String getDatabaseName() {
@@ -68,12 +74,23 @@ public class Dataset {
     this.databaseName = databaseName;
   }
 
+  public String getDatasetName() {
+    System.out.println("this.datasetName");
+    logger.info(this.datasetName);
+    return datasetName;
+  }
+
+  public void setDatasetName(String datasetName) {
+    this.datasetName = datasetName;
+  }
+
   @Override
   public String toString() {
     return "Dataset{" +
         "id='" + id + '\'' +
-        ", name='" + name + '\'' +
+        ", category='" + category + '\'' +
         ", databaseName='" + databaseName + '\'' +
+        ", datasetName='" + datasetName + '\'' +
         '}';
   }
 }
