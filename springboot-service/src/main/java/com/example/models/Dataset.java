@@ -18,14 +18,14 @@ public class Dataset {
   private String datasetName;
   private List<Map<String, Object>> data;
 
-  private List<String> elements;
+  private List<Map<String, Object>> elements;
 
   public Dataset() {
 
   }
 
   public Dataset(String name, String category, String databaseName, String datasetName,
-      List<Map<String, Object>> data, List<String> elements) {
+      List<Map<String, Object>> data, List<Map<String, Object>> elements) {
     this.name = datasetName;
     this.category = category;
     this.databaseName = databaseName;
@@ -34,11 +34,11 @@ public class Dataset {
     this.elements = elements;
   }
 
-  public List<String> getElements() {
+  public List<Map<String, Object>> getElements() {
     return elements;
   }
 
-  public void setElements(List<String> elements) {
+  public void setElements(List<Map<String, Object>> elements) {
     this.elements = elements;
   }
 
@@ -64,6 +64,15 @@ public class Dataset {
 
   public void setCategory(String category) {
     this.category = category;
+  }
+
+  // same as category
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
   }
 
   public String getDatabaseName() {

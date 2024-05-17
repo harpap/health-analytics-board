@@ -79,12 +79,24 @@ public class WebSecurityConfig {
     return http.build();
   }
 
+  // @Bean
+  // CorsConfigurationSource corsConfigurationSource() {
+  //   CorsConfiguration configuration = new CorsConfiguration();
+  //   configuration.setAllowedOrigins(
+  //       Arrays.asList("http://oncoevida.catalink.eu:88", "http://oncoevida.catalink.eu:8082", "http://91.184.203.22:8082", "http://oncoevida.catalink.eu:8083", "http://91.184.203.22:8083", "http://91.184.203.22:88", "http://91.184.203.22:80",
+  //           "http://services.catalink.eu:88", "http://services.catalink.eu:80"));
+  //   configuration.setAllowedMethods(Arrays.asList("*"));
+  //   configuration.setAllowedHeaders(Arrays.asList("*"));
+  //   configuration.setAllowCredentials(true);
+  //   UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+  //   source.registerCorsConfiguration("/**", configuration);
+  //   return source;
+  // }
   @Bean
   CorsConfigurationSource corsConfigurationSource() {
     CorsConfiguration configuration = new CorsConfiguration();
     configuration.setAllowedOrigins(
-        Arrays.asList("http://oncoevida.catalink.eu:88", "http://oncoevida.catalink.eu:8082", "http://91.184.203.22:8082", "http://91.184.203.22:88", "http://91.184.203.22:80",
-            "http://services.catalink.eu:88", "http://services.catalink.eu:80"));
+        Arrays.asList("*"));
     configuration.setAllowedMethods(Arrays.asList("*"));
     configuration.setAllowedHeaders(Arrays.asList("*"));
     configuration.setAllowCredentials(true);

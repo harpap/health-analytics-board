@@ -9,6 +9,7 @@ import com.example.payload.request.LoginRequest;
 import com.example.payload.request.SignupRequest;
 import com.example.payload.response.MessageResponse;
 import com.example.payload.response.UserInfoResponse;
+import com.example.payload.response.JwtResponse;
 import com.example.repository.RoleRepository;
 import com.example.repository.UserRepository;
 import com.example.security.jwt.JwtUtils;
@@ -73,6 +74,7 @@ public class AuthController {
     UserDetailsImpl userDetails = (UserDetailsImpl) authentication.getPrincipal();
 
     ResponseCookie jwtCookie = jwtUtils.generateJwtCookie(userDetails);
+    String jwt = jwtUtils.generateJwtToken(authentication);
 
     List<String> roles = userDetails.getAuthorities().stream()
         .map(item -> item.getAuthority())
@@ -82,13 +84,21 @@ public class AuthController {
 
     ResponseCookie jwtRefreshCookie = jwtUtils.generateRefreshJwtCookie(refreshToken.getToken());
 
+    // return ResponseEntity.ok()
+    //     .header(HttpHeaders.SET_COOKIE, jwtCookie.toString())
+    //     .header(HttpHeaders.SET_COOKIE, jwtRefreshCookie.toString())
+    //     .body(new UserInfoResponse(userDetails.getId(),
+    //         userDetails.getUsername(),
+    //         userDetails.getEmail(),
+    //         roles));
     return ResponseEntity.ok()
         .header(HttpHeaders.SET_COOKIE, jwtCookie.toString())
         .header(HttpHeaders.SET_COOKIE, jwtRefreshCookie.toString())
-        .body(new UserInfoResponse(userDetails.getId(),
-            userDetails.getUsername(),
-            userDetails.getEmail(),
-            roles));
+        .body(new JwtResponse(jwt, 
+              userDetails.getId(), 
+              userDetails.getUsername(), 
+              userDetails.getEmail(), 
+              roles));
   }
 
   @PostMapping("/signup")

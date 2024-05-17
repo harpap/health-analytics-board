@@ -12,9 +12,9 @@ services:
          - ./shared/mongo:/docker-entrypoint-initdb.d
          - ./shared/mongo:/data/db
 
-   certh_springboot_container:
+   certh_springboot_container_prod:
       build: ./springboot-service
-      container_name: certh_springboot_container
+      container_name: certh_springboot_container_prod
       ports:
          - 8082:8080
       networks:
