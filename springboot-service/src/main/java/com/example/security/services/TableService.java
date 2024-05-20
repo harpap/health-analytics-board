@@ -42,7 +42,7 @@ public class TableService {
     _table.setSelectedCountries(selectedCountries);
 
     Optional<Dataset> dataset = datasetRepository.findById(table.getDatasetId());
-    List<Map<String, Object>> data = dataset.get().getData();
+    List<Map<String, Object>> data = dataset.get().getElements();
 
     if (selectedColumns.isEmpty() && selectedCountries.isEmpty()) {
       _table.setData(data);

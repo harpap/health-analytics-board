@@ -24,7 +24,7 @@ public class Dataset {
 
   }
 
-  public Dataset(String name, String category, String databaseName, String datasetName,
+  public Dataset(String category, String databaseName, String datasetName,
       List<Map<String, Object>> data, List<Map<String, Object>> elements) {
     this.name = datasetName;
     this.category = category;
@@ -66,13 +66,13 @@ public class Dataset {
     this.category = category;
   }
 
-  // same as category
+  // same as datasetName
   public String getName() {
-    return name;
+    return datasetName;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setName(String datasetName) {
+    this.name = datasetName;
   }
 
   public String getDatabaseName() {
