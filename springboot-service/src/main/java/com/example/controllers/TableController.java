@@ -90,6 +90,7 @@ public class TableController {
       _table = tableRepository.save(_table);
       return new ResponseEntity<>(_table, HttpStatus.CREATED);
     } catch (Exception e) {
+      System.out.println(e);
       return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
     }
   }

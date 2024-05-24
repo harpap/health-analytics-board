@@ -17,7 +17,7 @@ public class Dataset {
   private String databaseName;
   private String datasetName;
   private List<Map<String, Object>> data;
-
+  private List<String> measures;
   private List<Map<String, Object>> elements;
 
   public Dataset() {
@@ -25,13 +25,23 @@ public class Dataset {
   }
 
   public Dataset(String category, String databaseName, String datasetName,
-      List<Map<String, Object>> data, List<Map<String, Object>> elements) {
+      List<Map<String, Object>> data, List<Map<String, Object>> elements, List<String> measures) {
     this.name = datasetName;
     this.category = category;
     this.databaseName = databaseName;
     this.datasetName = datasetName;
     this.data = data;
+    this.measures = measures;
     this.elements = elements;
+  }
+
+
+  public List<String> getMeasures() {
+    return measures;
+  }
+
+  public void setMeasures(List<String> measures) {
+    this.measures = measures;
   }
 
   public List<Map<String, Object>> getElements() {
