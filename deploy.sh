@@ -1,5 +1,5 @@
 #!/bin/bash
-#docker compose stop 
+docker compose stop 
 
 pushd springboot-service 
 mvn clean install
@@ -25,3 +25,5 @@ docker compose up --build -d
 # mongoimport --db analytics-dashboard --collection datasets --file "Data/CRC Incidence Rates/list_of_eu_countries.json" --jsonArray
 
 # mongoimport --db analytics-dashboard --collection datasets --file "/home/certh/mongofiles/datasets.json" --jsonArray --drop
+
+# mongoexport --collection=datasets --db=analytics-dashboard --out=datasets_vito_included.json
