@@ -109,6 +109,9 @@ public class TableController {
     }
 
     _table.setName(table.getName());
+    _table.setSelectedColumns(table.getSelectedColumns());
+    _table.setSelectedRows(table.getSelectedRows());
+    _table.setData(table.getData());
 
     return new ResponseEntity<>(tableRepository.save(_table), HttpStatus.OK);
   }

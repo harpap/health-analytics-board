@@ -38,8 +38,8 @@ public class TableService {
     List<String> selectedColumns = table.getSelectedColumns();
     _table.setSelectedColumns(selectedColumns);
 
-    List<String> selectedRows = table.getselectedRows();
-    _table.setselectedRows(selectedRows);
+    List<String> selectedRows = table.getSelectedRows();
+    _table.setSelectedRows(selectedRows);
 
     Optional<Dataset> dataset = datasetRepository.findById(table.getDatasetId());
     List<Map<String, Object>> data = dataset.get().getElements();

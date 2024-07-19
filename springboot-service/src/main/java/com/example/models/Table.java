@@ -32,11 +32,11 @@ public class Table {
     this.data = data;
   }
 
-  public List<String> getselectedRows() {
+  public List<String> getSelectedRows() {
     return selectedRows;
   }
 
-  public void setselectedRows(List<String> selectedRows) {
+  public void setSelectedRows(List<String> selectedRows) {
     this.selectedRows = selectedRows;
   }
 
