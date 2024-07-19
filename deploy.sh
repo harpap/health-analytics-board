@@ -1,5 +1,5 @@
 #!/bin/bash
-docker compose stop 
+#docker compose stop 
 
 pushd springboot-service 
 mvn clean install

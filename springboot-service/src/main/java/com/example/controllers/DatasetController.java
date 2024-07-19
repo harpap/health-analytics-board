@@ -2,6 +2,7 @@ package com.example.controllers;
 
 import com.example.exception.ResourceNotFoundException;
 import com.example.models.Dataset;
+import com.example.projections.DatasetProjection;
 import com.example.repository.DatasetRepository;
 import java.util.ArrayList;
 import java.util.List;
@@ -26,24 +27,14 @@ public class DatasetController {
   DatasetRepository datasetRepository;
 
   @GetMapping("/datasets")
-  public ResponseEntity<List<Dataset>> getAllDatasets(
-      @RequestParam(required = false) String name) {
-
+  public ResponseEntity<List<DatasetProjection>> getAllDatasets(@RequestParam(required = false) String name) {
     try {
-      List<Dataset> datasets = new ArrayList<>();
+      List<DatasetProjection> datasets;
 
       if (name == null) {
-        Iterable<Dataset> iterable = datasetRepository.findAll();
-
-        for (Dataset dataset : iterable) {
-          datasets.add(dataset);
-        }
+        datasets = datasetRepository.findAllProjected();
       } else {
-        Iterable<Dataset> iterable = datasetRepository.findByNameContaining(name);
-
-        for (Dataset dataset : iterable) {
-          datasets.add(dataset);
-        }
+        datasets = datasetRepository.findByNameContainingProjected(name);
       }
 
       if (datasets.isEmpty()) {

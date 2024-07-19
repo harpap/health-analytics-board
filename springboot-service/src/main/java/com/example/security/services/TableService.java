@@ -38,13 +38,13 @@ public class TableService {
     List<String> selectedColumns = table.getSelectedColumns();
     _table.setSelectedColumns(selectedColumns);
 
-    List<String> selectedCountries = table.getSelectedCountries();
-    _table.setSelectedCountries(selectedCountries);
+    List<String> selectedRows = table.getselectedRows();
+    _table.setselectedRows(selectedRows);
 
     Optional<Dataset> dataset = datasetRepository.findById(table.getDatasetId());
     List<Map<String, Object>> data = dataset.get().getElements();
 
-    if (selectedColumns.isEmpty() && selectedCountries.isEmpty()) {
+    if (selectedColumns.isEmpty() && selectedRows.isEmpty()) {
       _table.setData(data);
     } else {
       List<Map<String, Object>> filteredColumns = new ArrayList<>();
@@ -61,11 +61,11 @@ public class TableService {
       }
 
       List<Map<String, Object>> filteredCountries = new ArrayList<>();
-      if (!selectedCountries.isEmpty()) {
+      if (!selectedRows.isEmpty()) {
         for (Map<String, Object> row : data) {
           boolean shouldIncludeRoe = row.entrySet().stream()
               .filter(entry -> "Country".equals(entry.getKey()))
-              .anyMatch(entry -> selectedCountries.contains(entry.getValue()));
+              .anyMatch(entry -> selectedRows.contains(entry.getValue()));
 
           if (shouldIncludeRoe) {
             filteredCountries.add(new HashMap<>(row));

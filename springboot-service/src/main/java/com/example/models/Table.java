@@ -14,7 +14,7 @@ public class Table {
   private String name;
   private String datasetId;
   private List<String> selectedColumns;
-  private List<String> selectedCountries;
+  private List<String> selectedRows;
   private List<Map<String, Object>> data;
 
   public Table() {
@@ -22,22 +22,22 @@ public class Table {
   }
 
   public Table(String userId, String name, String datasetId,
-      List<String> selectedColumns, List<String> selectedCountries,
+      List<String> selectedColumns, List<String> selectedRows,
       List<Map<String, Object>> data) {
     this.userId = userId;
     this.name = name;
     this.datasetId = datasetId;
     this.selectedColumns = selectedColumns;
-    this.selectedCountries = selectedCountries;
+    this.selectedRows = selectedRows;
     this.data = data;
   }
 
-  public List<String> getSelectedCountries() {
-    return selectedCountries;
+  public List<String> getselectedRows() {
+    return selectedRows;
   }
 
-  public void setSelectedCountries(List<String> selectedCountries) {
-    this.selectedCountries = selectedCountries;
+  public void setselectedRows(List<String> selectedRows) {
+    this.selectedRows = selectedRows;
   }
 
   public List<Map<String, Object>> getData() {
