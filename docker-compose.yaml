@@ -2,6 +2,7 @@ version: "3"
 services:
 
    certh_mongo_container:
+      restart: unless-stopped
       build: ./mongo-service
       container_name: certh_mongo_container
       ports:
@@ -12,11 +13,12 @@ services:
          - ./shared/mongo:/docker-entrypoint-initdb.d
          - ./shared/mongo:/data/db
 
-   certh_springboot_container_prod:
+   certh_springboot_container_dev:
+      restart: unless-stopped
       build: ./springboot-service
-      container_name: certh_springboot_container_prod
+      container_name: certh_springboot_container_dev
       ports:
-         - 8082:8080
+         - 8083:8080
       networks:
          - evidanet
       links: 
