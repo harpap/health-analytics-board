@@ -38,9 +38,25 @@ public class UserCookiePreferencesController {
     // Create or update cookie preferences for a user
     @PostMapping("/cookies")
     public ResponseEntity<UserCookiePreferences> saveUserCookiePreferences(@RequestBody UserCookiePreferences userCookiePreferences) {
-        UserCookiePreferences savedPreferences = userCookiePreferencesService.savePreferences(userCookiePreferences);
-        return ResponseEntity.status(HttpStatus.CREATED).body(savedPreferences);
+        // Check if preferences already exist for the user
+        Optional<UserCookiePreferences> existingPreferences = userCookiePreferencesService.getPreferences(userCookiePreferences.getUserId());
+        
+        if (existingPreferences.isPresent()) {
+            // Update the existing preferences
+            UserCookiePreferences preferencesToUpdate = existingPreferences.get();
+            preferencesToUpdate.setFunctionalCookies(userCookiePreferences.isFunctionalCookies());
+            preferencesToUpdate.setAnalyticsCookies(userCookiePreferences.isAnalyticsCookies());
+            preferencesToUpdate.setMarketingCookies(userCookiePreferences.isMarketingCookies());
+            
+            UserCookiePreferences updatedPreferences = userCookiePreferencesService.savePreferences(preferencesToUpdate);
+            return ResponseEntity.ok(updatedPreferences);  // Return 200 OK with the updated preferences
+        } else {
+            // Create new preferences for the user
+            UserCookiePreferences savedPreferences = userCookiePreferencesService.savePreferences(userCookiePreferences);
+            return ResponseEntity.status(HttpStatus.CREATED).body(savedPreferences);
+        }
     }
+
 
     // Update cookie preferences for a user
     @PutMapping("/cookies/{id}")
