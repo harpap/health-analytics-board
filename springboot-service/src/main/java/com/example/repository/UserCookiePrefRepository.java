@@ -7,5 +7,5 @@ import java.util.Optional;
 public interface UserCookiePrefRepository extends MongoRepository<UserCookiePreferences, String> {
     
     // Custom method to find preferences by userId
-    Optional<UserCookiePreferences> findByUserId(Long userId);
+    Optional<UserCookiePreferences> findByUserId(String userId);
 }

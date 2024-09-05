@@ -39,7 +39,6 @@ public class SpringBootMongodbLoginApplication {
 	
 		SpringApplication.run(SpringBootMongodbLoginApplication.class, args);
 		logger.info("Running....");
-		System.out.println("lllllllllllllllllll");
 	}
 
 }

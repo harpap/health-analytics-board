@@ -13,7 +13,7 @@ public class UserCookiePreferencesService {
     @Autowired
     private UserCookiePrefRepository repository;
 
-    public Optional<UserCookiePreferences> getPreferences(Long userId) {
+    public Optional<UserCookiePreferences> getPreferences(String userId) {
         return repository.findByUserId(userId);
     }
 
