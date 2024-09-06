@@ -11,6 +11,7 @@ public class UserCookiePreferences {
 
     private String userId;
     private boolean functionalCookies;
+    private boolean personalizationCookies;
     private boolean analyticsCookies;
     private boolean marketingCookies;
 
@@ -18,9 +19,10 @@ public class UserCookiePreferences {
     public UserCookiePreferences() {
     }
 
-    public UserCookiePreferences(String userId, boolean functionalCookies, boolean analyticsCookies, boolean marketingCookies) {
+    public UserCookiePreferences(String userId, boolean functionalCookies, boolean personalizationCookies, boolean analyticsCookies, boolean marketingCookies) {
         this.userId = userId;
         this.functionalCookies = functionalCookies;
+        this.personalizationCookies = personalizationCookies;
         this.analyticsCookies = analyticsCookies;
         this.marketingCookies = marketingCookies;
     }
@@ -48,6 +50,14 @@ public class UserCookiePreferences {
 
     public void setFunctionalCookies(boolean functionalCookies) {
         this.functionalCookies = functionalCookies;
+    }
+
+    public boolean isPersonalizationCookies() {
+        return personalizationCookies;
+    }
+
+    public void setPersonalizationCookies(boolean personalizationCookies) {
+        this.personalizationCookies = personalizationCookies;
     }
 
     public boolean isAnalyticsCookies() {

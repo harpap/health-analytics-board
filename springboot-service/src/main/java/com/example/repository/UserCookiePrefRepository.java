@@ -8,4 +8,6 @@ public interface UserCookiePrefRepository extends MongoRepository<UserCookiePref
     
     // Custom method to find preferences by userId
     Optional<UserCookiePreferences> findByUserId(String userId);
+    // Custom method to delete preferences by userId
+    Optional<UserCookiePreferences> deleteByUserId(String userId);
 }

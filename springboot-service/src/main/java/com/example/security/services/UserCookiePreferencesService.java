@@ -25,7 +25,7 @@ public class UserCookiePreferencesService {
         return repository.save(preferences);
     }
 
-    public void deletePreferences(String id) {
-        repository.deleteById(id);
+    public void deletePreferences(String userId) {
+        repository.deleteByUserId(userId);
     }
 }
