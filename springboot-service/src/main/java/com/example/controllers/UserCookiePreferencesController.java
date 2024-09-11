@@ -42,6 +42,7 @@ public class UserCookiePreferencesController {
         Optional<UserCookiePreferences> existingPreferences = userCookiePreferencesService.getPreferences(userCookiePreferences.getUserId());
         
         if (existingPreferences.isPresent()) {
+            userCookiePreferences.setId(existingPreferences.get().getId()); // Set the ID to ensure the update happens on the correct document
             UserCookiePreferences updatedPreferences = userCookiePreferencesService.savePreferences(userCookiePreferences);
             return ResponseEntity.ok(updatedPreferences);
         } else {

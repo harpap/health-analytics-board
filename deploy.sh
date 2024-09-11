@@ -8,6 +8,9 @@ popd
 # docker compose up --build
 docker compose up --build -d
 
+# gia na svinoun ta refresh tokens:
+# db.refreshTokens.createIndex({ "expiryDate": 1 }, { expireAfterSeconds: 0 })
+
 # mongoimport --db analytics-dashboard --collection roles --file ./springboot-service/analytics-dashboard.roles.json --jsonArray --drop
 
 # mongoimport --db analytics-dashboard --collection datasets --file "./Data/Environmental Data/eu_env_pollutants_agg.json" --jsonArray --drop
